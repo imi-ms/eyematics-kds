@@ -1,0 +1,39 @@
+{
+     "name": "de.medizininformatikinitiative.kerndatensatz.dokument",
+     "version": "2025.0.0-alpha",
+     "description": "Medizininformatik Initiative - Modul Dokument",
+     "keywords": [
+       "MII",
+       "KDS",
+       "Dokument"
+     ],
+     "type": "IG",
+     "license": "CC0-1.0",
+     "canonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/ImplementationGuide/mii-ig-dok-de",
+     "url": "https://simplifier.net/mii-erweiterungsmodul-dokument",
+     "title": "MII IG Dokument",
+     "dependencies": {
+       "de.gematik.isik-dokumentenaustausch": "4.0.0-rc2",
+       "kbv.basis": "1.6.0",
+       "ihe.iti.mhd": "4.2.2",
+       "dvmd.kdl.r4": "2024.0.0"
+     },
+     "author": "Medizininformatik Initiative",
+     "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
+     "fhirVersions": [
+       "4.0.1"
+     ],
+     "language": "de-DE",
+     "homepage": "https://www.medizininformatik-initiative.de",
+     "maintainers" : [{
+       "name" : "Medizininformatik Initiative",
+       "url" : "https://www.medizininformatik-initiative.de"
+     }],
+     "bugs": {
+       "url": "https://github.com/medizininformatik-initiative/kerndatensatzmodul-dokument/issues"
+     },
+     "repository": {
+       "type": "git",
+       "url": "https://github.com/medizininformatik-initiative/kerndatensatzmodul-dokument.git"
+     }
+   }
