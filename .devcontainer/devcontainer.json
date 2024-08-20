@@ -1,0 +1,29 @@
+{
+  "name": "SUSHI and IG Publisher",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "[typescript]": {
+          "editor.formatOnSave": true
+        },
+        "livePreview.defaultPreviewPath": "output/",
+        "editor.tabSize": 2
+      },
+      "extensions": [
+        "mhutchie.git-graph",
+        "xyz.local-history",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "MITRE-Health.vscode-language-fsh",
+        "jebbs.plantuml",
+        "ms-vscode.live-server"
+      ]
+    }
+  },
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.fhir,target=/home/vscode/.fhir,type=bind"
+  ]
+}

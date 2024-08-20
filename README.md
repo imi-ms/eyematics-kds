@@ -2,7 +2,15 @@
 
 ## Development Environment
 
+### Prerequisite
+
+1. Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+2. Clone this [Github repository](https://github.com/medizininformatik-initiative/kerndatensatz-dokument)
+3. Change directory to the cloned Github repository (working tree)
+
 ### Setup
+
+#### Full Setup
 
 1. Install Node environment (e.g. using [NodeJS](https://nodejs.org) [Node Version Manager](https://github.com/nvm-sh/nvm))
 2. Install Java Runtime Environment (e.g. using [OpenJDK](https://openjdk.org/))
@@ -10,18 +18,22 @@
 4. Install [Visual Studio Code](https://code.visualstudio.com) and the [FHIR Shorthand language extension](https://marketplace.visualstudio.com/items?itemName=MITRE-Health.vscode-language-fsh)
 5. Install [SUSHI](https://fshschool.org/docs/sushi/) [using these instructions](https://fshschool.org/docs/sushi/installation/)
 
+#### Dev Containers (Dockerized)
+
+1. Install [Visual Studio Code](https://code.visualstudio.com) and the [FHIR Shorthand language extension](https://marketplace.visualstudio.com/items?itemName=MITRE-Health.vscode-language-fsh)
+2. Install [Dev Containers Environment](https://code.visualstudio.com/docs/devcontainers/tutorial)
+4. Open in Dev Container using [Visual Studio Code command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette): `> Dev Containers: Open Workspace in Container...`
+
 ### Usage
 
-1. Clone this [Github repository](https://github.com/medizininformatik-initiative/kerndatensatz-dokument)
-2. Change directory to the cloned Github repository (working tree)
-3. Run `sushi` on command line to check if everything is setup correctly
-4. Create or edit your FHIR profiles using Visual Studio Code with proper extensions
-5. Compile your FHIR Shorthand files to FHIR JSON using `sushi`
-6. Repeat step *4 to 6* until your finished with your profiling task
-7. *Optional*: Run `_updatePublisher.{sh,bat}` to download the FHIR IG Publisher
-8. Run `_genonce.{sh,bat}` to create the implementation guide with the FHIR IG Publisher and check the generated report for warnings and errors
-9. Commit your changes and push them to the `dev` branch (or any other feature branch based on `dev` you have created to introduce your changes)
-10. Create a [Pull Request](https://github.com/medizininformatik-initiative/kerndatensatz-dokument/pulls) to review and merge your work into `main` or `master` branch
+1. Run `sushi` on command line to check if everything is setup correctly
+2. Create or edit your FHIR profiles using Visual Studio Code with proper extensions
+3. Compile your FHIR Shorthand files to FHIR JSON using `sushi`
+4. Repeat step *2 to 4* until your finished with your profiling task
+5. *Optional*: Run `_updatePublisher.{sh,bat}` to download the FHIR IG Publisher
+6. Run `_genonce.{sh,bat}` to create the implementation guide with the FHIR IG Publisher and check the generated report for warnings and errors
+7. Commit your changes and push them to the `dev` branch (or any other feature branch based on `dev` you have created to introduce your changes)
+8. Create a [Pull Request](https://github.com/medizininformatik-initiative/kerndatensatz-dokument/pulls) to review and merge your work into `main` or `master` branch
 
 ### Branch Model
 
