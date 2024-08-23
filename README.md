@@ -43,6 +43,14 @@
 | `dev` | Branch for the collaborative development of the implementation guide, profiles, etc. Quality assurance checks are triggerd on incoming changes. |
 | `[prefix/]<task-name>` | Task (or feature) branch based on `dev` for the development of single features (e.g. profiles), which is merged back into `dev` branch after finishing work. |
 
+### Troubleshooting
+
+#### SUSHI Errors and Warnings
+
+| Problem | Description | Possible Solution |
+| :- | :- | :- |
+| SUSHI cannot generate or misses snapshots | SUSHI claims a faulty or missing [snapshot](https://www.hl7.org/fhir/profiling.html#snapshot) while processing your created FHIR Profile (StructureDefinition). | Either you've missed to install expected dependencies: Check if the `dependencies` section in the `sushi-config.yaml` contains the required FHIR packages your FHIR Profile uses. Or the package your FHIR Profile uses does not contain the required snapshots to determine your modeled FHIR Profile constraints and build the resulting snapshot: The easiest way might be to [install the Firely Terminal](https://docs.fire.ly/projects/Firely-Terminal/getting_started/InstallingFirelyTerminal.html) and [install the dependent packages, including the snapshots](https://docs.fire.ly/projects/Firely-Terminal/package_management/Managing-Packages.html#expansions-and-snapshots), your FHIR Profile uses manually to the local FHIR cache. |
+
 ## Links
 
 ### Specifications
