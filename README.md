@@ -22,7 +22,10 @@
 
 1. Install [Visual Studio Code](https://code.visualstudio.com) and the [FHIR Shorthand language extension](https://marketplace.visualstudio.com/items?itemName=MITRE-Health.vscode-language-fsh)
 2. Install [Dev Containers Environment](https://code.visualstudio.com/docs/devcontainers/tutorial)
-4. Open in Dev Container using [Visual Studio Code command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette): `> Dev Containers: Open Workspace in Container...`
+3. Open in Dev Container using [Visual Studio Code command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette): `> Dev Containers: Open Folder in Container...`
+4. Select the cloned Github repository as folder, containing the Dev Container configuration
+
+After following this instructions, a prepared docker image will be downloaded and configured, a container based on this images is created with the Github repository mounted into the container as working directory and a new Visual Studio Code window incl. a terminal (shell) opens, representing the development environment to perform the FHIR Profiling.
 
 ### Usage
 
