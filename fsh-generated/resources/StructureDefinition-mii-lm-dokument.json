@@ -1,0 +1,608 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-lm-dokument",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/StructureDefinition/LogicalModel/mii-lm-dokument",
+  "version": "2025.0.0-alpha",
+  "name": "MII_LM_Dokument",
+  "title": "MII LM Dokument",
+  "status": "draft",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "MII Logical Model Modul Dolument",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "mii-map-dokument",
+      "name": "MII MAP Dokument",
+      "comment": "MII Mappings Modul Dokument"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/StructureDefinition/LogicalModel/mii-lm-dokument",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "mii-lm-dokument",
+        "path": "mii-lm-dokument",
+        "short": "MII LM Dokument",
+        "definition": "MII Logical Model Modul Dolument"
+      },
+      {
+        "id": "mii-lm-dokument.Dokument",
+        "path": "mii-lm-dokument.Dokument",
+        "short": "Dokument",
+        "definition": "Metadaten und Referenzen zu einem Dokument",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Identifikator",
+        "path": "mii-lm-dokument.Dokument.Identifikator",
+        "short": "Identifikator des Dokuments",
+        "definition": "Der Identifikator soll in einheitlicher ID-Struktur eine eindeutige Bestimmung eines Dokument zulassen und in pseudonymisierter Form vorliegen.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.identifier"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.StatusReferenz",
+        "path": "mii-lm-dokument.Dokument.StatusReferenz",
+        "short": "Referenzstatus",
+        "definition": "Status der Dokumentenreferenz",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.status"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.StatusDokument",
+        "path": "mii-lm-dokument.Dokument.StatusDokument",
+        "short": "Dokumentstatus",
+        "definition": "Status des zugrunde liegenden Dokuments",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.docStatus"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Typ",
+        "path": "mii-lm-dokument.Dokument.Typ",
+        "short": "Dokumenttyp",
+        "definition": "Genauer Typ des klinischen Dokuments, z.B. Ärztlicher Verlaufsbericht",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.type"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Kategorie",
+        "path": "mii-lm-dokument.Dokument.Kategorie",
+        "short": "Dokumentkategorien",
+        "definition": "Übergeordnete Klasse des klinischen Dokumenttyps, z.B. Arztberichte bzw. AD für Arztdokumentation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.category"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Subjekt",
+        "path": "mii-lm-dokument.Dokument.Subjekt",
+        "short": "Subjektfokus",
+        "definition": "Referenz/Subjektfokus dient der eindeutigen Definition wer oder was im Fokus des Dokumentes im klinischen Kontext steht.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.subject"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Datum",
+        "path": "mii-lm-dokument.Dokument.Datum",
+        "short": "Erstellungszeitpunkt",
+        "definition": "Datum und Zeitpunkt an welcher das Dokumentmodul erstellt wurde",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.date"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Autor",
+        "path": "mii-lm-dokument.Dokument.Autor",
+        "short": "Dokumentautoren",
+        "definition": "Referenz/Autor gibt Auskunft über die Autorenschaft des Dokuments.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.author"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Authentifikator",
+        "path": "mii-lm-dokument.Dokument.Authentifikator",
+        "short": "Dokumentauthentifikator",
+        "definition": "Referenz/Authentifikator referenziert über die Person oder Organisation welche das Dokument validiert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.authenticator"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Verwalter",
+        "path": "mii-lm-dokument.Dokument.Verwalter",
+        "short": "Verwalter",
+        "definition": "Referenz/Verwalter referenziert auf die Organisation welche das Dokument verwaltet",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.custodian"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Beschreibung",
+        "path": "mii-lm-dokument.Dokument.Beschreibung",
+        "short": "Beschreibung",
+        "definition": "Kurzzusammenfassung des Dokumenteninhalts",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.description"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Sicherheitsstufe",
+        "path": "mii-lm-dokument.Dokument.Sicherheitsstufe",
+        "short": "Sicherheitsstufe",
+        "definition": "Sicherheitsstufe",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.securityLabel"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Dokumentenbeziehungen",
+        "path": "mii-lm-dokument.Dokument.Dokumentenbeziehungen",
+        "short": "Dokumentbeziehungen",
+        "definition": "Beziehungen zu anderen Dokumenten, z.B gleiches Dokument in unterschiedlichen Verarbeitungszuständen",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.relatesTo"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Beziehungstyp",
+        "path": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Beziehungstyp",
+        "short": "Dokumentbeziehungsart",
+        "definition": "Die Art der Beziehung zwischen Dokumenten, z.B. de-identifziert",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.relatesTo.code"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.DokumentenIdentifikator",
+        "path": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.DokumentenIdentifikator",
+        "short": "Dokumentreferenz",
+        "definition": "Ziel der Beziehung, typisch Dokumenten-Identifikator",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.relatesTo.target"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Inhalt",
+        "path": "mii-lm-dokument.Dokument.Inhalt",
+        "short": "Dokumentinhalt",
+        "definition": "Referenziertes Dokument",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.content"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Inhalt.Format",
+        "path": "mii-lm-dokument.Dokument.Inhalt.Format",
+        "short": "Dokumentformat",
+        "definition": "Format, z.B. MIME Typ",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.content.format"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Inhalt.DokumentenUrl",
+        "path": "mii-lm-dokument.Dokument.Inhalt.DokumentenUrl",
+        "short": "Dokumentverweis",
+        "definition": "Verweis auf lokal gültige Zugriffsystem auf den Text des Dokuments",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "url"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.attachment.url"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Inhalt.Sprache",
+        "path": "mii-lm-dokument.Dokument.Inhalt.Sprache",
+        "short": "Erfassungssprache",
+        "definition": "Sprache, in der das Dokument verfasst ist",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.attachment.language"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Kontext",
+        "path": "mii-lm-dokument.Dokument.Kontext",
+        "short": "Klinischer Kontext",
+        "definition": "Klinischer Kontext",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.context"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Kontext.Fall",
+        "path": "mii-lm-dokument.Dokument.Kontext.Fall",
+        "short": "Dokumentkontext",
+        "definition": "Referenz/Fall referenziert auf den klinischen Fall",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter",
+              "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.context.encounter"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Kontext.Events",
+        "path": "mii-lm-dokument.Dokument.Kontext.Events",
+        "short": "Dokumentierte Hauptprozeduren",
+        "definition": "Events, Hauptprozeduren welche im klinischen Kontext durchgeführt wurden",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.context.event"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Kontext.Dokumentationszeitraum",
+        "path": "mii-lm-dokument.Dokument.Kontext.Dokumentationszeitraum",
+        "short": "Dokumentationszeitraum",
+        "definition": "Dokumentationszeitraum auf den sich der Inhalt des Dokuments bezieht",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.context.period"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Kontext.Einrichtungsart",
+        "path": "mii-lm-dokument.Dokument.Kontext.Einrichtungsart",
+        "short": "Behandelnde Fachabteilung",
+        "definition": "Klinische Domäne aus der das Dokument entstammt, z.B Fachabteilungsschlüssel 0300 Kariologie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.context.facilityType"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Kontext.KlinischeDomaene",
+        "path": "mii-lm-dokument.Dokument.Kontext.KlinischeDomaene",
+        "short": "Erfassende Fachabteilung",
+        "definition": "Klinische Domäne",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.context.practiceSetting"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Kontext.PatientenIdentifikator",
+        "path": "mii-lm-dokument.Dokument.Kontext.PatientenIdentifikator",
+        "short": "Patient",
+        "definition": "Patienten-Identfikator",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.context.sourcePatientInfo"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Kontext.FallIdentifikator",
+        "path": "mii-lm-dokument.Dokument.Kontext.FallIdentifikator",
+        "short": "Fall",
+        "definition": "Fall-Identifikator",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.context.related"
+          }
+        ]
+      }
+    ]
+  }
+}

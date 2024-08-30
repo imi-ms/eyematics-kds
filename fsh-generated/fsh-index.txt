@@ -1,1 +1,2 @@
-Output File  Name  Type  FSH File  Lines
+Output File                               Name             Type     FSH File                    Lines
+StructureDefinition-mii-lm-dokument.json  MII_LM_Dokument  Logical  logical-model/Dokument.fsh  1 - 34
