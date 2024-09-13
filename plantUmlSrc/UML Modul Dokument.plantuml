@@ -1,0 +1,55 @@
+@startuml
+skinparam Linetype ortho
+skinparam Nodesep 150
+skinparam Ranksep 80
+skinparam legendBackgroundColor #white
+
+package "Modul Dokument" {
+  class Dokument <<DocumentReference>> #LightCyan {
+  + Identifikator <<identifier>>: Identifier [0..1]
+  + Status der Referenz <<status>>: code [1..1]
+  + Status des Dokuments <<docStatus>>: code [0..1]
+  + Typ <<type>>: CodeableConcept [0..1]
+  + Kategorie <<category>>: Coding [0..1] 
+  + Beschreibung: string [0..1]
+  + Beziehungstyp: Coding [0..1]
+  + {field} Dokumenten-Identifikator: id [0..1]: Reference(Dokument)
+  + Format: Coding [0..1]
+  + Erstellungsdatum: dateTime [0..1]
+  + {field} Patienten-Identifikator: [1..1]: Reference(Patient:in)
+  + {field} Fall-Identifikator: [0..1]: Reference(Fall)
+  + Fachabteilungsschlüssel: [0..1]
+  + Dokumentationszeitraum: period [0..1]
+}
+  class Inhalt <<Attachment>>{
+  + MimeType <<contentType>>: Coding [0..1]
+  + Sprache <<language>>: Coding [0..1]
+  + Daten <<data>>: base64Binary [0..1]
+  + Größe <<size>>: unsignedInt [0..1]
+  + URL : url [0..1]
+}
+}
+Dokument "1..1" -l- "0..1" Inhalt: attachment
+Dokument "1..1" -l- "0..1" Dokument: attachment
+
+package "Basismodule" {
+  class "Patient:in" <<from Person>> #Lightgreen {
+}
+
+  class Versorgungsstellenkontakt <<from Fall>> #Lightgreen {
+}
+
+
+}
+
+Dokument "0..*" -- "1..1" "Patient:in" : subject
+Dokument "0..*" -- "1..1" "Versorgungsstellenkontakt" : encounter
+
+legend left
+    = Legende
+    |<#lightgray>      | abgeleitet aus FHIR-Kernspezifikation|
+    |<#lightgreen>     | MII KDS-Module|
+    |<#lightcyan>      | zentrale Profile (bessere Lesbarkeit)|
+'    |<#lightyellow>    | Extensions|
+endlegend
+@enduml
