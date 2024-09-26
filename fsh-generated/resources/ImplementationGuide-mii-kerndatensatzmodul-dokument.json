@@ -68,7 +68,7 @@
           "reference": "StructureDefinition/mii-lm-dokument"
         },
         "name": "MII LM Dokument",
-        "description": "MII Logical Model Modul Dolument",
+        "description": "MII Logical Model Modul Dokument",
         "exampleBoolean": false
       }
     ],

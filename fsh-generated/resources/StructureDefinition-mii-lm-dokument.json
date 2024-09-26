@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "MII Logical Model Modul Dolument",
+  "description": "MII Logical Model Modul Dokument",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -37,13 +37,13 @@
         "id": "mii-lm-dokument",
         "path": "mii-lm-dokument",
         "short": "MII LM Dokument",
-        "definition": "MII Logical Model Modul Dolument"
+        "definition": "MII Logical Model Modul Dokument"
       },
       {
         "id": "mii-lm-dokument.Dokument",
         "path": "mii-lm-dokument.Dokument",
         "short": "Dokument",
-        "definition": "Metadaten und Referenzen zu einem Dokument",
+        "definition": "Metadaten und Referenzen eines Dokuments",
         "min": 1,
         "max": "1",
         "type": [
@@ -59,12 +59,31 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Identifikator",
-        "path": "mii-lm-dokument.Dokument.Identifikator",
-        "short": "Identifikator des Dokuments",
-        "definition": "Der Identifikator soll in einheitlicher ID-Struktur eine eindeutige Bestimmung eines Dokument zulassen und in pseudonymisierter Form vorliegen.",
+        "id": "mii-lm-dokument.Dokument.Masteridentifikator",
+        "path": "mii-lm-dokument.Dokument.Masteridentifikator",
+        "short": "Masteridentifikator",
+        "definition": "Masteridentifikator lässt eine eindeutige Zuordnung des Dokumentes zu. Er ist versionsabhängig und folgt einem einheitlichen System z.B. DICOM-Identifikatornomenklatur",
         "min": 0,
-        "max": "*",
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.masterIdentifier"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Businessidentifikator",
+        "path": "mii-lm-dokument.Dokument.Businessidentifikator",
+        "short": "Businessidentifikator",
+        "definition": "Der Businessidentifikator kann eine fakultative Erweiterung des Masteridentifikators sein. Hier können versionsunabhängige Identifikatoren oder IDs aus anderen Systemen integriert werden, welche Auskunft über die Identität des zu Grunde liegenden Dokumentes geben",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "Identifier"
@@ -78,10 +97,10 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.StatusReferenz",
-        "path": "mii-lm-dokument.Dokument.StatusReferenz",
+        "id": "mii-lm-dokument.Dokument.Referenzstatus",
+        "path": "mii-lm-dokument.Dokument.Referenzstatus",
         "short": "Referenzstatus",
-        "definition": "Status der Dokumentenreferenz",
+        "definition": "Status der (Dokumenten-) Referenz",
         "min": 1,
         "max": "1",
         "type": [
@@ -97,8 +116,8 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.StatusDokument",
-        "path": "mii-lm-dokument.Dokument.StatusDokument",
+        "id": "mii-lm-dokument.Dokument.Dokumentstatus",
+        "path": "mii-lm-dokument.Dokument.Dokumentstatus",
         "short": "Dokumentstatus",
         "definition": "Status des zugrunde liegenden Dokuments",
         "min": 0,
@@ -157,7 +176,7 @@
         "id": "mii-lm-dokument.Dokument.Subjekt",
         "path": "mii-lm-dokument.Dokument.Subjekt",
         "short": "Subjektfokus",
-        "definition": "Referenz/Subjektfokus dient der eindeutigen Definition wer oder was im Fokus des Dokumentes im klinischen Kontext steht.",
+        "definition": "Subjektfokus dient der eindeutigen Definition wer oder was im Fokus des Dokumentes im klinischen Kontext steht",
         "min": 0,
         "max": "1",
         "type": [
@@ -201,7 +220,7 @@
         "id": "mii-lm-dokument.Dokument.Autor",
         "path": "mii-lm-dokument.Dokument.Autor",
         "short": "Dokumentautoren",
-        "definition": "Referenz/Autor gibt Auskunft über die Autorenschaft des Dokuments.",
+        "definition": "Autor gibt Auskunft über die Autorenschaft des Dokuments",
         "min": 0,
         "max": "*",
         "type": [
@@ -228,7 +247,7 @@
         "id": "mii-lm-dokument.Dokument.Authentifikator",
         "path": "mii-lm-dokument.Dokument.Authentifikator",
         "short": "Dokumentauthentifikator",
-        "definition": "Referenz/Authentifikator referenziert über die Person oder Organisation welche das Dokument validiert",
+        "definition": "Authentifikator referenziert über die Person oder Organisation welche das Dokument validiert",
         "min": 0,
         "max": "1",
         "type": [
@@ -252,7 +271,7 @@
         "id": "mii-lm-dokument.Dokument.Verwalter",
         "path": "mii-lm-dokument.Dokument.Verwalter",
         "short": "Verwalter",
-        "definition": "Referenz/Verwalter referenziert auf die Organisation welche das Dokument verwaltet",
+        "definition": "Verwalter referenziert auf die Organisation welche das Dokument verwaltet",
         "min": 0,
         "max": "1",
         "type": [
@@ -330,7 +349,7 @@
       {
         "id": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Beziehungstyp",
         "path": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Beziehungstyp",
-        "short": "Dokumentbeziehungsart",
+        "short": "Beziehungstyp",
         "definition": "Die Art der Beziehung zwischen Dokumenten, z.B. de-identifziert",
         "min": 1,
         "max": "1",
@@ -347,9 +366,9 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.DokumentenIdentifikator",
-        "path": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.DokumentenIdentifikator",
-        "short": "Dokumentreferenz",
+        "id": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Dokumentenidentifikator",
+        "path": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Dokumentenidentifikator",
+        "short": "Beziehungsziel",
         "definition": "Ziel der Beziehung, typisch Dokumenten-Identifikator",
         "min": 1,
         "max": "1",
@@ -388,9 +407,28 @@
         ]
       },
       {
+        "id": "mii-lm-dokument.Dokument.Inhalt.Anhang",
+        "path": "mii-lm-dokument.Dokument.Inhalt.Anhang",
+        "short": "Anhang",
+        "definition": "Anhang erlaubt eine direkte Integration des Freitextes als Code z.B. Base64 in die Dokumentenreferenz",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.attachment"
+          }
+        ]
+      },
+      {
         "id": "mii-lm-dokument.Dokument.Inhalt.Format",
         "path": "mii-lm-dokument.Dokument.Inhalt.Format",
-        "short": "Dokumentformat",
+        "short": "Format",
         "definition": "Format, z.B. MIME Typ",
         "min": 0,
         "max": "1",
@@ -409,7 +447,7 @@
       {
         "id": "mii-lm-dokument.Dokument.Inhalt.DokumentenUrl",
         "path": "mii-lm-dokument.Dokument.Inhalt.DokumentenUrl",
-        "short": "Dokumentverweis",
+        "short": "Verweis",
         "definition": "Verweis auf lokal gültige Zugriffsystem auf den Text des Dokuments",
         "min": 0,
         "max": "1",
@@ -428,7 +466,7 @@
       {
         "id": "mii-lm-dokument.Dokument.Inhalt.Sprache",
         "path": "mii-lm-dokument.Dokument.Inhalt.Sprache",
-        "short": "Erfassungssprache",
+        "short": "Sprache",
         "definition": "Sprache, in der das Dokument verfasst ist",
         "min": 0,
         "max": "1",
@@ -466,8 +504,8 @@
       {
         "id": "mii-lm-dokument.Dokument.Kontext.Fall",
         "path": "mii-lm-dokument.Dokument.Kontext.Fall",
-        "short": "Dokumentkontext",
-        "definition": "Referenz/Fall referenziert auf den klinischen Fall",
+        "short": "Fall",
+        "definition": "Fall referenziert auf den klinischen Fall",
         "min": 0,
         "max": "*",
         "type": [
@@ -489,7 +527,7 @@
       {
         "id": "mii-lm-dokument.Dokument.Kontext.Events",
         "path": "mii-lm-dokument.Dokument.Kontext.Events",
-        "short": "Dokumentierte Hauptprozeduren",
+        "short": "Prozeduren",
         "definition": "Events, Hauptprozeduren welche im klinischen Kontext durchgeführt wurden",
         "min": 0,
         "max": "*",
@@ -528,7 +566,7 @@
         "id": "mii-lm-dokument.Dokument.Kontext.Einrichtungsart",
         "path": "mii-lm-dokument.Dokument.Kontext.Einrichtungsart",
         "short": "Behandelnde Fachabteilung",
-        "definition": "Klinische Domäne aus der das Dokument entstammt, z.B Fachabteilungsschlüssel 0300 Kariologie",
+        "definition": "Klinische Domäne aus der das Dokument entstammt, z.B Fachabteilungsschlüssel 0300 Kardiologie",
         "min": 0,
         "max": "1",
         "type": [
@@ -563,8 +601,8 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Kontext.PatientenIdentifikator",
-        "path": "mii-lm-dokument.Dokument.Kontext.PatientenIdentifikator",
+        "id": "mii-lm-dokument.Dokument.Kontext.Patientenidentifikator",
+        "path": "mii-lm-dokument.Dokument.Kontext.Patientenidentifikator",
         "short": "Patient",
         "definition": "Patienten-Identfikator",
         "min": 0,
@@ -585,8 +623,8 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Kontext.FallIdentifikator",
-        "path": "mii-lm-dokument.Dokument.Kontext.FallIdentifikator",
+        "id": "mii-lm-dokument.Dokument.Kontext.Fallidentifikator",
+        "path": "mii-lm-dokument.Dokument.Kontext.Fallidentifikator",
         "short": "Fall",
         "definition": "Fall-Identifikator",
         "min": 0,
