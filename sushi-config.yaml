@@ -32,7 +32,7 @@ language: de-DE
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
 #     version: 1.0.0
 dependencies:
-  de.gematik.isik-dokumentenaustausch: 4.0.0-rc2
+  de.gematik.isik-dokumentenaustausch: 4.0.0
   kbv.basis: 1.6.0
   ihe.iti.mhd: 4.2.2
   dvmd.kdl.r4: 2024.0.0

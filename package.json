@@ -13,7 +13,7 @@
      "url": "https://simplifier.net/mii-erweiterungsmodul-dokument",
      "title": "MII IG Dokument",
      "dependencies": {
-       "de.gematik.isik-dokumentenaustausch": "4.0.0-rc2",
+       "de.gematik.isik-dokumentenaustausch": "4.0.0",
        "kbv.basis": "1.6.0",
        "ihe.iti.mhd": "4.2.2",
        "dvmd.kdl.r4": "2024.0.0"
