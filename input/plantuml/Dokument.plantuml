@@ -1,72 +1,141 @@
 @startuml
+
+' Canvas Parameters
 skinparam Linetype ortho
-skinparam Nodesep 150
-skinparam Ranksep 80
+skinparam Nodesep 100
+skinparam Ranksep 100
 skinparam legendBackgroundColor #white
-
-class Dokument <<DocumentReference>> {
-    + Masteridentifikator: identifier [0..1]
-    + Businessidentifikator: identifier [0..1]
-    + Status: code [1..1]
-    + Dokumentstatus: code [0..1]
-    + Typ: CodeableConcept [0..1]
-    + Kategorie: CodeableConcept [0..*]
-    + {field} Patienten-Bezug: Reference(Patient) [0..1]
-    + Zeitstempel: instant [0..1]
-    + {field} Autor: Reference(Practitioner) [0..*]
-    + {field} Authentifikator: Reference(Practitioner) [0..1]
-    + {field} Verwalter: Reference(Organization) [0..1]
-    + Dokumentenbeziehung: relatesTo [0..*]
-    + Beschreibung: string [0..1]
-    + Sicherheitsstufe: CodeableConcept [0..*]
-    + Inhalt: content [1..*]
-    + Kontext: context [0..1]
-}
-
-class Dokumentenbeziehung <<DocumentReference.relatesTo>> {
-    + Code: code  [1..1]
-    + {field} Ziel: Reference(DocumentReference) [1..1]
-}
-
-class Inhalt <<DocumentReference.content>> {
-    + Anhang: attachment [1..1]
-    + Format: Coding [0..1]
-}
-
-class Kontext <<DocumentReference.context>> {
-    + {field} Fall-Bezug: Reference(Encounter) [0..*]
-    + Event: CodeableConcept [0..*]
-    + Dokumentationszeitraum: Period [0..1]
-    + Einrichtungsart: CodeableConcept [0..1]
-    + KlinischeDomäne: CodeableConcept [0..1]
-    + {field} Demografie: Reference(Patient) [0..1]
-}
-
-class "Patient:in" <<from Person>> #Lightgreen {
-}
-
-class Versorgungsstellenkontakt <<from Fall>> #Lightgreen {
-}
-
 
 legend
     = Legende
-    |<#lightgray>      | abgeleitet aus FHIR-Kernspezifikation|
-    |<#lightgreen>     | MII KDS-Module|
-    |<#lightyellow>    | Extensions|
+    |<#lightgray>      | Abgeleitet aus FHIR-Kernspezifikation |
+    |<#lightgreen>     | MII KDS-Modul |
+    |<#lightyellow>    | Erweiterung |
 endlegend
 
-Dokument "1..1" -- "0..*" Dokumentenbeziehung
-Dokument "1..1" -r- "1..*" Inhalt
-Dokument "1..1" -- "0..1" Kontext
-Dokument "1..1" -- "0..1" "Patient:in": DocumentReference.subject
-Dokument "1..1" -- "0..*" Dokumentenbeziehung: DocumentReference.relatesTo.target
+' Klassen
+'class Dokument <<DocumentReference>> {
+'    + {field} Masteridentifikator: Identifier [0..1]
+'    + {field} Businessidentifikator: Identifier [0..1]
+'    + {field} Status: code [1..1]
+'    + {field} Dokumentstatus: code [0..1]
+'    + {field} Typ: CodeableConcept [0..1]
+'    + {field} Kategorie: CodeableConcept [0..*]
+'    + {field} Patient: Reference(Patient) [0..1]
+'    + {field} Erstellungsdatum: instant [0..1]
+'    + {field} Autor: Reference(Practitioner) [0..*]
+'    + {field} Authentifikator: Reference(Practitioner) [0..1]
+'    + {field} Verwalter: Reference(Organization) [0..1]
+'    + {field} Beschreibung: string [0..1]
+'    + {field} Sicherheitsstufe: CodeableConcept [0..*]
+''    + {field} Dokumentenbeziehung: relatesTo [0..*]
+''    + {field} Inhalt: content [1..*]
+''    + {field} Kontext: context [0..1]
+'}
 
+abstract class Dokument <<DocumentReference>> {
+    + {field} Masteridentifikator: Identifier [0..1]
+    + {field} Businessidentifikator: Identifier [0..1]
+    + {field} Status: code [1..1]
+    + {field} Dokumentstatus: code [0..1]
+    + {field} Typ: CodeableConcept [0..1]
+    + {field} Kategorie: CodeableConcept [0..*]
+    + {field} Sicherheitsstufe: CodeableConcept [0..*]
+}
 
+class "Dokument - Identifizierend" <<DocumentReference>> {
+    + {field} Patient: Reference(Patient) [0..1]
+    + {field} Erstellungsdatum: instant [0..1]
+    + {field} Autor: Reference(Practitioner) [0..*]
+    + {field} Authentifikator: Reference(Practitioner) [0..1]
+    + {field} Verwalter: Reference(Organization) [0..1]
+    + {field} Beschreibung: string [0..1]
+}
 
-Kontext "1..1" -u- " 0..*" Versorgungsstellenkontakt: DocumentReference.context.encounter
-Kontext "1..1" -- "0..1" "Patient:in": DocumentReference.context.sourcePatientInfo
+class "Dokument - Pseudonymisiert" <<DocumentReference>> {
+    + {field} Patient: Reference(Patient) [0..1]
+}
 
-Dokumentenbeziehung -[hidden]up- "Patient:in"
+class Dokumentenbeziehung <<DocumentReference.relatesTo>> {
+    + {field} Typ: code  [1..1]
+    + {field} Referenz: Reference(DocumentReference) [1..1]
+}
+
+class Inhalt <<DocumentReference.content>> {
+'    + Anhang: attachment [1..1]
+    + {field} Format: Coding [0..1]
+}
+
+abstract class Anhang <<Attachment>> {
+    + {field} Sprache: code [0..1]
+}
+
+class Binärdaten <<Attachment>> {
+    + {field} Daten: base64Binary [0..1]
+}
+
+class Verweis <<Attachment>> {
+    + {field} DokumentenUrl: url [0..1]
+}
+
+'class "KlinischerKontext" <<DocumentReference.context>> {
+'    + {field} Einrichtungskontakt: Reference(Encounter) [0..*]
+'    + {field} KlinischeHandlung: CodeableConcept [0..*]
+'    + {field} Dokumentationszeitraum: Period [0..1]
+'    + {field} Einrichtungsart: CodeableConcept [0..1]
+'    + {field} Fachgebiet: CodeableConcept [0..1]
+'    + {field} Patient: Reference(Patient) [0..1]
+'    + {field} MedizinischerFall: Reference(Encounter or EpisodeOfCare) [0..1]
+'}
+
+abstract class "KlinischerKontext" <<DocumentReference.context>> {
+    + {field} KlinischeHandlung: CodeableConcept [0..*]
+    + {field} Dokumentationszeitraum: Period [0..1]
+    + {field} Einrichtungsart: CodeableConcept [0..1]
+    + {field} Fachgebiet: CodeableConcept [0..1]
+}
+
+class "KlinischerKontext - Identifizierend" <<DocumentReference.context>> {
+    + {field} Einrichtungskontakt: Reference(Encounter) [0..*]
+    + {field} Patient: Reference(Patient) [0..1]
+    + {field} MedizinischerFall: Reference(Encounter or EpisodeOfCare) [0..1]
+}
+
+class "KlinischerKontext - Pseudonymisiert" <<DocumentReference.context>> {
+    + {field} Patient: Reference(Patient) [0..1]
+}
+
+' MII KDS-Modul Person
+package Person #LightGreen {
+  class "Patient:in" <<Patient>> #Lightgreen
+  class "Patient:in - Pseudonymisiert" <<Patient>> #Lightgreen
+}
+
+' MII KDS-Modul Fall
+package Fall #LightGreen {
+  class Einrichtungskontakt <<Encounter>> #Lightgreen
+  class Abteilungskontakt <<Encounter>> #Lightgreen
+  class Versorgungsstellenkontakt <<Encounter>> #Lightgreen
+}
+
+' Beziehungen
+Dokument -- "1..*" Inhalt: content >
+Dokument -r- "0..1" "KlinischerKontext": context >
+Dokument -u- "0..*" Dokumentenbeziehung: relatesTo >
+Dokument <|-l- "Dokument - Identifizierend"
+Dokument <|-l- "Dokument - Pseudonymisiert"
+"Dokument - Identifizierend" -- "0..1" "Patient:in": subject >
+"Dokument - Pseudonymisiert" -- "0..1" "Patient:in - Pseudonymisiert": subject >
+Dokumentenbeziehung -- Dokument: target >
+Inhalt -- Anhang: attachment >
+KlinischerKontext -- "0..*" Einrichtungskontakt: encounter >
+KlinischerKontext -- "0..*" Abteilungskontakt: encounter >
+KlinischerKontext -- "0..*" Versorgungsstellenkontakt: encounter >
+KlinischerKontext <|-- "KlinischerKontext - Identifizierend"
+KlinischerKontext <|-- "KlinischerKontext - Pseudonymisiert"
+"KlinischerKontext - Identifizierend" -- "0..1" "Patient:in": sourcePatientInfo >
+"KlinischerKontext - Pseudonymisiert" -- "0..1" "Patient:in - Pseudonymisiert": sourcePatientInfo >
+Anhang <|-- Binärdaten
+Anhang <|-- Verweis
 
 @enduml

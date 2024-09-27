@@ -97,8 +97,8 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Referenzstatus",
-        "path": "mii-lm-dokument.Dokument.Referenzstatus",
+        "id": "mii-lm-dokument.Dokument.Status",
+        "path": "mii-lm-dokument.Dokument.Status",
         "short": "Referenzstatus",
         "definition": "Status der (Dokumenten-) Referenz",
         "min": 1,
@@ -173,20 +173,17 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Subjekt",
-        "path": "mii-lm-dokument.Dokument.Subjekt",
-        "short": "Subjektfokus",
-        "definition": "Subjektfokus dient der eindeutigen Definition wer oder was im Fokus des Dokumentes im klinischen Kontext steht",
+        "id": "mii-lm-dokument.Dokument.Patient",
+        "path": "mii-lm-dokument.Dokument.Patient",
+        "short": "Patient",
+        "definition": "Patient, oder anonymisierter/pseudonymiserter Patient, der im Fokus des Dokumentes im klinischen Kontext steht",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.org/fhir/StructureDefinition/Device"
+              "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
         ],
@@ -198,8 +195,8 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Datum",
-        "path": "mii-lm-dokument.Dokument.Datum",
+        "id": "mii-lm-dokument.Dokument.Erstellungsdatum",
+        "path": "mii-lm-dokument.Dokument.Erstellungsdatum",
         "short": "Erstellungszeitpunkt",
         "definition": "Datum und Zeitpunkt an welcher das Dokumentmodul erstellt wurde",
         "min": 0,
@@ -227,12 +224,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
             ]
           }
         ],
@@ -247,16 +239,14 @@
         "id": "mii-lm-dokument.Dokument.Authentifikator",
         "path": "mii-lm-dokument.Dokument.Authentifikator",
         "short": "Dokumentauthentifikator",
-        "definition": "Authentifikator referenziert über die Person oder Organisation welche das Dokument validiert",
+        "definition": "Authentifikator referenziert über die Person, welche das Dokument validiert",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
             ]
           }
         ],
@@ -347,8 +337,8 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Beziehungstyp",
-        "path": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Beziehungstyp",
+        "id": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Typ",
+        "path": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Typ",
         "short": "Beziehungstyp",
         "definition": "Die Art der Beziehung zwischen Dokumenten, z.B. de-identifziert",
         "min": 1,
@@ -366,8 +356,8 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Dokumentenidentifikator",
-        "path": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Dokumentenidentifikator",
+        "id": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Referenz",
+        "path": "mii-lm-dokument.Dokument.Dokumentenbeziehungen.Referenz",
         "short": "Beziehungsziel",
         "definition": "Ziel der Beziehung, typisch Dokumenten-Identifikator",
         "min": 1,
@@ -426,6 +416,44 @@
         ]
       },
       {
+        "id": "mii-lm-dokument.Dokument.Inhalt.Anhang.DokumentenUrl",
+        "path": "mii-lm-dokument.Dokument.Inhalt.Anhang.DokumentenUrl",
+        "short": "Verweis",
+        "definition": "Verweis auf lokal gültige Zugriffsystem auf den Text des Dokuments",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "url"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.attachment.url"
+          }
+        ]
+      },
+      {
+        "id": "mii-lm-dokument.Dokument.Inhalt.Anhang.Sprache",
+        "path": "mii-lm-dokument.Dokument.Inhalt.Anhang.Sprache",
+        "short": "Sprache",
+        "definition": "Sprache, in der das Dokument verfasst ist",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mii-map-dokument",
+            "map": "DocumentReference.attachment.language"
+          }
+        ]
+      },
+      {
         "id": "mii-lm-dokument.Dokument.Inhalt.Format",
         "path": "mii-lm-dokument.Dokument.Inhalt.Format",
         "short": "Format",
@@ -445,46 +473,8 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Inhalt.DokumentenUrl",
-        "path": "mii-lm-dokument.Dokument.Inhalt.DokumentenUrl",
-        "short": "Verweis",
-        "definition": "Verweis auf lokal gültige Zugriffsystem auf den Text des Dokuments",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "url"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "mii-map-dokument",
-            "map": "DocumentReference.attachment.url"
-          }
-        ]
-      },
-      {
-        "id": "mii-lm-dokument.Dokument.Inhalt.Sprache",
-        "path": "mii-lm-dokument.Dokument.Inhalt.Sprache",
-        "short": "Sprache",
-        "definition": "Sprache, in der das Dokument verfasst ist",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "mii-map-dokument",
-            "map": "DocumentReference.attachment.language"
-          }
-        ]
-      },
-      {
-        "id": "mii-lm-dokument.Dokument.Kontext",
-        "path": "mii-lm-dokument.Dokument.Kontext",
+        "id": "mii-lm-dokument.Dokument.KlinischerKontext",
+        "path": "mii-lm-dokument.Dokument.KlinischerKontext",
         "short": "Klinischer Kontext",
         "definition": "Klinischer Kontext",
         "min": 0,
@@ -502,18 +492,17 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Kontext.Fall",
-        "path": "mii-lm-dokument.Dokument.Kontext.Fall",
-        "short": "Fall",
-        "definition": "Fall referenziert auf den klinischen Fall",
+        "id": "mii-lm-dokument.Dokument.KlinischerKontext.Einrichtungskontakt",
+        "path": "mii-lm-dokument.Dokument.KlinischerKontext.Einrichtungskontakt",
+        "short": "Einrichtungskontakt",
+        "definition": "Aufenthalte und Besuche von Patient*innen bei Gesundheitseinrichtungen gemäß des Fall-Moduls (Einrichtungs-, Abteilungs- oder Versorgungsstellenkontakt)",
         "min": 0,
         "max": "*",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter",
-              "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
             ]
           }
         ],
@@ -525,10 +514,10 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Kontext.Events",
-        "path": "mii-lm-dokument.Dokument.Kontext.Events",
-        "short": "Prozeduren",
-        "definition": "Events, Hauptprozeduren welche im klinischen Kontext durchgeführt wurden",
+        "id": "mii-lm-dokument.Dokument.KlinischerKontext.KlinischeHandlung",
+        "path": "mii-lm-dokument.Dokument.KlinischerKontext.KlinischeHandlung",
+        "short": "Klinische Handlungen",
+        "definition": "Handlungen und Prozeduren welche im klinischen Kontext durchgeführt wurden",
         "min": 0,
         "max": "*",
         "type": [
@@ -544,8 +533,8 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Kontext.Dokumentationszeitraum",
-        "path": "mii-lm-dokument.Dokument.Kontext.Dokumentationszeitraum",
+        "id": "mii-lm-dokument.Dokument.KlinischerKontext.Dokumentationszeitraum",
+        "path": "mii-lm-dokument.Dokument.KlinischerKontext.Dokumentationszeitraum",
         "short": "Dokumentationszeitraum",
         "definition": "Dokumentationszeitraum auf den sich der Inhalt des Dokuments bezieht",
         "min": 0,
@@ -563,9 +552,9 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Kontext.Einrichtungsart",
-        "path": "mii-lm-dokument.Dokument.Kontext.Einrichtungsart",
-        "short": "Behandelnde Fachabteilung",
+        "id": "mii-lm-dokument.Dokument.KlinischerKontext.Einrichtungsart",
+        "path": "mii-lm-dokument.Dokument.KlinischerKontext.Einrichtungsart",
+        "short": "Einrichtungsart",
         "definition": "Klinische Domäne aus der das Dokument entstammt, z.B Fachabteilungsschlüssel 0300 Kardiologie",
         "min": 0,
         "max": "1",
@@ -582,9 +571,9 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Kontext.KlinischeDomaene",
-        "path": "mii-lm-dokument.Dokument.Kontext.KlinischeDomaene",
-        "short": "Erfassende Fachabteilung",
+        "id": "mii-lm-dokument.Dokument.KlinischerKontext.Fachgebiet",
+        "path": "mii-lm-dokument.Dokument.KlinischerKontext.Fachgebiet",
+        "short": "Fachgebiet",
         "definition": "Klinische Domäne",
         "min": 0,
         "max": "1",
@@ -601,10 +590,10 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Kontext.Patientenidentifikator",
-        "path": "mii-lm-dokument.Dokument.Kontext.Patientenidentifikator",
+        "id": "mii-lm-dokument.Dokument.KlinischerKontext.Patient",
+        "path": "mii-lm-dokument.Dokument.KlinischerKontext.Patient",
         "short": "Patient",
-        "definition": "Patienten-Identfikator",
+        "definition": "Referenz auf Patienteninformationen, die zum Zeitpunkt der Veröffentlichung des Dokuments vorlagen (ggf. versionsspezifisch)",
         "min": 0,
         "max": "1",
         "type": [
@@ -623,15 +612,19 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.Kontext.Fallidentifikator",
-        "path": "mii-lm-dokument.Dokument.Kontext.Fallidentifikator",
-        "short": "Fall",
-        "definition": "Fall-Identifikator",
+        "id": "mii-lm-dokument.Dokument.KlinischerKontext.MedizinischerFall",
+        "path": "mii-lm-dokument.Dokument.KlinischerKontext.MedizinischerFall",
+        "short": "Medizinischer Fall",
+        "definition": "Bezug zum medizinischen Fall (Behandlungsepisode)",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "Identifier"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter",
+              "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
+            ]
           }
         ],
         "mapping": [
