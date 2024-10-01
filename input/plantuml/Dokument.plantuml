@@ -96,7 +96,7 @@ abstract class "KlinischerKontext" <<DocumentReference.context>> {
 }
 
 class "KlinischerKontext - Identifizierend" <<DocumentReference.context>> {
-    + {field} Einrichtungskontakt: Reference(Encounter) [0..*]
+    + {field} Gesundheitseinrichtungskontakt: Reference(Encounter) [0..*]
     + {field} Patient: Reference(Patient) [0..1]
     + {field} MedizinischerFall: Reference(Encounter or EpisodeOfCare) [0..1]
 }
@@ -128,14 +128,17 @@ Dokument <|-l- "Dokument - Pseudonymisiert"
 "Dokument - Pseudonymisiert" -- "0..1" "Patient:in - Pseudonymisiert": subject >
 Dokumentenbeziehung -- Dokument: target >
 Inhalt -- Anhang: attachment >
-KlinischerKontext -- "0..*" Einrichtungskontakt: encounter >
-KlinischerKontext -- "0..*" Abteilungskontakt: encounter >
-KlinischerKontext -- "0..*" Versorgungsstellenkontakt: encounter >
 KlinischerKontext <|-- "KlinischerKontext - Identifizierend"
 KlinischerKontext <|-- "KlinischerKontext - Pseudonymisiert"
+"KlinischerKontext - Identifizierend" -- "0..*" Fall: encounter >
+'"KlinischerKontext - Identifizierend" -- "0..*" Einrichtungskontakt: encounter >
+'"KlinischerKontext - Identifizierend" -- "0..*" Abteilungskontakt: encounter >
+'"KlinischerKontext - Identifizierend" -- "0..*" Versorgungsstellenkontakt: encounter >
 "KlinischerKontext - Identifizierend" -- "0..1" "Patient:in": sourcePatientInfo >
 "KlinischerKontext - Pseudonymisiert" -- "0..1" "Patient:in - Pseudonymisiert": sourcePatientInfo >
 Anhang <|-- Binärdaten
 Anhang <|-- Verweis
+Einrichtungskontakt -r- "0..*" Abteilungskontakt
+Abteilungskontakt -r- "0..*" Versorgungsstellenkontakt
 
 @enduml

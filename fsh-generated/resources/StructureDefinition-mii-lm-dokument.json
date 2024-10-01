@@ -492,9 +492,9 @@
         ]
       },
       {
-        "id": "mii-lm-dokument.Dokument.KlinischerKontext.Einrichtungskontakt",
-        "path": "mii-lm-dokument.Dokument.KlinischerKontext.Einrichtungskontakt",
-        "short": "Einrichtungskontakt",
+        "id": "mii-lm-dokument.Dokument.KlinischerKontext.Gesundheitseinrichtungskontakt",
+        "path": "mii-lm-dokument.Dokument.KlinischerKontext.Gesundheitseinrichtungskontakt",
+        "short": "Gesundheitseinrichtungskontakt",
         "definition": "Aufenthalte und Besuche von Patient*innen bei Gesundheitseinrichtungen gemäß des Fall-Moduls (Einrichtungs-, Abteilungs- oder Versorgungsstellenkontakt)",
         "min": 0,
         "max": "*",
