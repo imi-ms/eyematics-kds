@@ -70,6 +70,14 @@
         "name": "MII LM Dokument",
         "description": "MII Logical Model Modul Dokument",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-dokument"
+        },
+        "name": "MII Profile Dokument",
+        "description": "Erforderliche Metadaten für Dokumentenaustausch in der MII",
+        "exampleBoolean": false
       }
     ],
     "page": {
