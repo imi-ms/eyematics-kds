@@ -28,22 +28,22 @@ package Fall #LightGreen {
 
 ' Klassen
 class Dokument <<DocumentReference>> {
-    + {field} Masteridentifikator: Identifier [0..1]
+    + {field} Masteridentifikator: Identifier <back:#yellow>[0..1 / ISiK: 1..1]</back>
     + {field} Businessidentifikator: Identifier [0..1]
     + {field} Dokumentenreferenzstatus: code [1..1]
     + {field} Dokumentenstatus: code [0..1]
-    + {field} Dokumententyp: CodeableConcept [0..1]
-    + {field} Dokumentenkategorie: CodeableConcept [0..*]
-    + {field} Patient: Reference(Patient) [0..1]
+    + {field} Dokumententyp: CodeableConcept <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Dokumentenkategorie: CodeableConcept <back:#yellow>[0..* / ISiK: 0..1]</back>
+    + {field} Patient: Reference(Patient) <back:#yellow>[0..1 / ISiK: 1..1]</back>
     + {field} Erstellungsdatum: instant [0..1]
     + {field} Autor: Reference(Practitioner) [0..*]
     + {field} Authentifikator: Reference(Practitioner) [0..1]
     + {field} Verwalter: Reference(Organization) [0..1]
-    + {field} Beschreibung: string [0..1]
-    + {field} Sicherheitsstufe: CodeableConcept [0..*]
+    + {field} Beschreibung: string <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Sicherheitsstufe: CodeableConcept <back:#yellow>[0..* / ISiK: 1..*]</back>
     + {field} Dokumentenbeziehung: BackboneElement [0..*]
-    + {field} Inhalt: BackboneElement [1..*]
-    + {field} Kontext: BackboneElement [0..1]
+    + {field} Inhalt: BackboneElement <back:#yellow>[1..* / ISiK: 1..1]</back>
+    + {field} Kontext: BackboneElement <back:#yellow>[0..1 / ISiK: 1..1]</back>
 }
 
 class Dokumentenbeziehung <<DocumentReference.relatesTo>> {
@@ -52,22 +52,24 @@ class Dokumentenbeziehung <<DocumentReference.relatesTo>> {
 }
 
 class Kontext <<DocumentReference.context>> {
-    + {field} Gesundheitseinrichtungskontakt: Reference(Encounter) [0..*]
+    + {field} Gesundheitseinrichtungskontakt: Reference(Encounter) <back:#yellow>[0..* / ISiK: 0..1]</back>
     + {field} Vorgang: CodeableConcept [0..*]
     + {field} Dokumentationszeitraum: Period [0..1]
-    + {field} Einrichtungsart: CodeableConcept [0..1]
-    + {field} Fachgebiet: CodeableConcept [0..1]
+    + {field} Einrichtungsart: CodeableConcept <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Fachgebiet: CodeableConcept <back:#yellow>[0..1 / ISiK: 1..1]</back>
 }
 
 class Inhalt <<DocumentReference.content>> {
     + {field} Anhang: Attachment [1..1]
-    + {field} Dokumentenformat: Coding [0..1]
+    + {field} Dokumentenformat: Coding <back:#yellow>[0..1 / ISiK: 1..1]</back>
 }
 
 class Anhang <<Attachment>> {
+    + {field} <back:#yellow>ISiK: MimeTyp: code [1..1]</back>
     + {field} Daten: base64Binary [0..1]
     + {field} DokumentenUrl: url [0..1]
-    + {field} Sprache: code [0..1]
+    + {field} Sprache: code <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} <back:#yellow>ISiK: Erstellungsdatum: dateTime [1..1]</back>
 }
 
 ' Beziehungen
