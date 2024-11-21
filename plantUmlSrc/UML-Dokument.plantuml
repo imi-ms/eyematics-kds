@@ -1,0 +1,72 @@
+@startuml
+skinparam Linetype ortho
+skinparam Nodesep 150
+skinparam Ranksep 80
+skinparam legendBackgroundColor #white
+
+class Dokument <<DocumentReference>> {
+    + Masteridentifikator: identifier [0..1]
+    + Businessidentifikator: identifier [0..1]
+    + Status: code [1..1]
+    + Dokumentstatus: code [0..1]
+    + Typ: CodeableConcept [0..1]
+    + Kategorie: CodeableConcept [0..*]
+    + {field} Patienten-Bezug: Reference(Patient) [0..1]
+    + Zeitstempel: instant [0..1]
+    + {field} Autor: Reference(Practitioner) [0..*]
+    + {field} Authentifikator: Reference(Practitioner) [0..1]
+    + {field} Verwalter: Reference(Organization) [0..1]
+    + Dokumentenbeziehung: relatesTo [0..*]
+    + Beschreibung: string [0..1]
+    + Sicherheitsstufe: CodeableConcept [0..*]
+    + Inhalt: content [1..*]
+    + Kontext: context [0..1]
+}
+
+class Dokumentenbeziehung <<DocumentReference.relatesTo>> {
+    + Code: code  [1..1]
+    + {field} Ziel: Reference(DocumentReference) [1..1]
+}
+
+class Inhalt <<DocumentReference.content>> {
+    + Anhang: attachment [1..1]
+    + Format: Coding [0..1]
+}
+
+class Kontext <<DocumentReference.context>> {
+    + {field} Fall-Bezug: Reference(Encounter) [0..*]
+    + Event: CodeableConcept [0..*]
+    + Dokumentationszeitraum: Period [0..1]
+    + Einrichtungsart: CodeableConcept [0..1]
+    + KlinischeDomäne: CodeableConcept [0..1]
+    + {field} Demografie: Reference(Patient) [0..1]
+}
+
+class "Patient:in" <<from Person>> #Lightgreen {
+}
+
+class Versorgungsstellenkontakt <<from Fall>> #Lightgreen {
+}
+
+
+legend
+    = Legende
+    |<#lightgray>      | abgeleitet aus FHIR-Kernspezifikation|
+    |<#lightgreen>     | MII KDS-Module|
+    |<#lightyellow>    | Extensions|
+endlegend
+
+Dokument "1..1" -- "0..*" Dokumentenbeziehung
+Dokument "1..1" -r- "1..*" Inhalt
+Dokument "1..1" -- "0..1" Kontext
+Dokument "1..1" -- "0..1" "Patient:in": DocumentReference.subject
+Dokument "1..1" -- "0..*" Dokumentenbeziehung: DocumentReference.relatesTo.target
+
+
+
+Kontext "1..1" -u- " 0..*" Versorgungsstellenkontakt: DocumentReference.context.encounter
+Kontext "1..1" -- "0..1" "Patient:in": DocumentReference.context.sourcePatientInfo
+
+Dokumentenbeziehung -[hidden]up- "Patient:in"
+
+@enduml
