@@ -2,6 +2,7 @@
 fhirpkg.lock.json
 Thumbs.db
 /input-cache
+/out
 /output
 /temp
 /template

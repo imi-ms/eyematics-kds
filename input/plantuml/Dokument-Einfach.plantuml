@@ -1,0 +1,84 @@
+@startuml
+
+' Canvas Parameters
+skinparam Linetype ortho
+skinparam Nodesep 150
+skinparam Ranksep 100
+skinparam legendBackgroundColor #white
+
+legend top right
+    = Legende
+    |<#lightgray>      | Abgeleitet aus FHIR-Kernspezifikation |
+    |<#lightgreen>     | MII KDS-Modul |
+    |<#lightyellow>    | Erweiterung |
+endlegend
+
+' MII KDS-Modul Person
+package Person #LightGreen {
+    class "Patient:in" <<Patient>> #LightGreen
+    class "Patient:in - Pseudonymisiert" <<Patient>> #LightGreen
+}
+
+' MII KDS-Modul Fall
+package Fall #LightGreen {
+  class Einrichtungskontakt <<Encounter>> #LightGreen
+  class Abteilungskontakt <<Encounter>> #LightGreen
+  class Versorgungsstellenkontakt <<Encounter>> #LightGreen
+}
+
+' Klassen
+class Dokument <<DocumentReference>> {
+    + {field} Masteridentifikator: Identifier [0..1]
+    + {field} Businessidentifikator: Identifier [0..1]
+    + {field} Dokumentenreferenzstatus: code [1..1]
+    + {field} Dokumentenstatus: code [0..1]
+    + {field} Dokumententyp: CodeableConcept [0..1]
+    + {field} Dokumentenkategorie: CodeableConcept [0..*]
+    + {field} Patient: Reference(Patient) [0..1]
+    + {field} Erstellungsdatum: instant [0..1]
+    + {field} Autor: Reference(Practitioner) [0..*]
+    + {field} Authentifikator: Reference(Practitioner) [0..1]
+    + {field} Verwalter: Reference(Organization) [0..1]
+    + {field} Beschreibung: string [0..1]
+    + {field} Sicherheitsstufe: CodeableConcept [0..*]
+    + {field} Dokumentenbeziehung: BackboneElement [0..*]
+    + {field} Inhalt: BackboneElement [1..*]
+    + {field} Kontext: BackboneElement [0..1]
+}
+
+class Dokumentenbeziehung <<DocumentReference.relatesTo>> {
+    + {field} Beziehungstyp: code [1..1]
+    + {field} Beziehungsreferenz: Reference(DocumentReference) [1..1]
+}
+
+class Kontext <<DocumentReference.context>> {
+    + {field} Gesundheitseinrichtungskontakt: Reference(Encounter) [0..*]
+    + {field} Vorgang: CodeableConcept [0..*]
+    + {field} Dokumentationszeitraum: Period [0..1]
+    + {field} Einrichtungsart: CodeableConcept [0..1]
+    + {field} Fachgebiet: CodeableConcept [0..1]
+}
+
+class Inhalt <<DocumentReference.content>> {
+    + {field} Anhang: Attachment [1..1]
+    + {field} Dokumentenformat: Coding [0..1]
+}
+
+class Anhang <<Attachment>> {
+    + {field} Daten: base64Binary [0..1]
+    + {field} DokumentenUrl: url [0..1]
+    + {field} Sprache: code [0..1]
+}
+
+' Beziehungen
+Dokument *- "1..*" Inhalt: content >
+Dokument *-- "0..1" Kontext: context >
+Dokument *-- "0..*" Dokumentenbeziehung: relatesTo >
+Dokument o-u- "0..1" Person: subject >
+Dokumentenbeziehung -- Dokument: target >
+Inhalt -r- Anhang: attachment >
+Kontext o-- "0..*" Fall: encounter >
+Einrichtungskontakt -- "0..*" Abteilungskontakt
+Abteilungskontakt -- "0..*" Versorgungsstellenkontakt
+
+@enduml
