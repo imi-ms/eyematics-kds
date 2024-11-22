@@ -2,15 +2,15 @@
 
 ' Canvas Parameters
 skinparam Linetype ortho
-skinparam Nodesep 150
+skinparam Nodesep 100
 skinparam Ranksep 100
 skinparam legendBackgroundColor #white
 
-legend top right
+legend bottom right
     = Legende
-    |<#lightgray>      | Abgeleitet aus FHIR-Kernspezifikation |
-    |<#lightgreen>     | MII KDS-Modul |
-    |<#lightyellow>    | Erweiterung |
+    |<#LightGray>      | Abgeleitet aus FHIR-Kernspezifikation |
+    |<#LightGreen>     | MII KDS-Modul |
+    |<#LightYellow>    | Erweiterung |
 endlegend
 
 ' MII KDS-Modul Person
@@ -28,22 +28,26 @@ package Fall #LightGreen {
 
 ' Klassen
 class Dokument <<DocumentReference>> {
-    + {field} Masteridentifikator: Identifier <back:#yellow>[0..1 / ISiK: 1..1]</back>
+'   + {field} Masteridentifikator: Identifier <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Masteridentifikator: Identifier [0..1]
     + {field} Businessidentifikator: Identifier [0..1]
     + {field} Dokumentenreferenzstatus: code [1..1]
     + {field} Dokumentenstatus: code [0..1]
-    + {field} Dokumententyp: CodeableConcept <back:#yellow>[0..1 / ISiK: 1..1]</back>
-    + {field} Dokumentenkategorie: CodeableConcept <back:#yellow>[0..* / ISiK: 0..1]</back>
-    + {field} Patient: Reference(Patient) <back:#yellow>[0..1 / ISiK: 1..1]</back>
-    + {field} Erstellungsdatum: instant [0..1]
-    + {field} Autor: Reference(Practitioner) [0..*]
-    + {field} Authentifikator: Reference(Practitioner) [0..1]
-    + {field} Verwalter: Reference(Organization) [0..1]
-    + {field} Beschreibung: string <back:#yellow>[0..1 / ISiK: 1..1]</back>
-    + {field} Sicherheitsstufe: CodeableConcept <back:#yellow>[0..* / ISiK: 1..*]</back>
+'   + {field} Dokumententyp: CodeableConcept <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Dokumententyp: CodeableConcept [0..1]
+'   + {field} Dokumentenkategorie: CodeableConcept <back:#yellow>[0..* / ISiK: 0..1]</back>
+    + {field} Dokumentenkategorie: CodeableConcept [0..*]
+'   + {field} Patient: Reference(Patient) <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Patient: Reference(Patient) [0..1]
+'   + {field} Beschreibung: string <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Beschreibung: string [0..1]
+'   + {field} Sicherheitsstufe: CodeableConcept <back:#yellow>[0..* / ISiK: 1..*]</back>
+    + {field} Sicherheitsstufe: CodeableConcept [0..*]
     + {field} Dokumentenbeziehung: BackboneElement [0..*]
-    + {field} Inhalt: BackboneElement <back:#yellow>[1..* / ISiK: 1..1]</back>
-    + {field} Kontext: BackboneElement <back:#yellow>[0..1 / ISiK: 1..1]</back>
+'   + {field} Inhalt: BackboneElement <back:#yellow>[1..* / ISiK: 1..1]</back>
+    + {field} Inhalt: BackboneElement [1..*]
+'   + {field} Kontext: BackboneElement <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Kontext: BackboneElement [0..1]
 }
 
 class Dokumentenbeziehung <<DocumentReference.relatesTo>> {
@@ -52,34 +56,40 @@ class Dokumentenbeziehung <<DocumentReference.relatesTo>> {
 }
 
 class Kontext <<DocumentReference.context>> {
-    + {field} Gesundheitseinrichtungskontakt: Reference(Encounter) <back:#yellow>[0..* / ISiK: 0..1]</back>
+'   + {field} Gesundheitseinrichtungskontakt: Reference(Encounter) <back:#yellow>[0..* / ISiK: 0..1]</back>
+    + {field} Gesundheitseinrichtungskontakt: Reference(Encounter) [0..*]
     + {field} Vorgang: CodeableConcept [0..*]
     + {field} Dokumentationszeitraum: Period [0..1]
-    + {field} Einrichtungsart: CodeableConcept <back:#yellow>[0..1 / ISiK: 1..1]</back>
-    + {field} Fachgebiet: CodeableConcept <back:#yellow>[0..1 / ISiK: 1..1]</back>
+'   + {field} Einrichtungsart: CodeableConcept <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Einrichtungsart: CodeableConcept [0..1]
+'   + {field} Fachgebiet: CodeableConcept <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Fachgebiet: CodeableConcept [0..1]
 }
 
 class Inhalt <<DocumentReference.content>> {
     + {field} Anhang: Attachment [1..1]
-    + {field} Dokumentenformat: Coding <back:#yellow>[0..1 / ISiK: 1..1]</back>
+'   + {field} Dokumentenformat: Coding <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Dokumentenformat: Coding [0..1]
 }
 
 class Anhang <<Attachment>> {
-    + {field} <back:#yellow>ISiK: MimeTyp: code [1..1]</back>
+'   + {field} <back:#yellow>ISiK: MimeTyp: code [1..1]</back>
     + {field} Daten: base64Binary [0..1]
     + {field} DokumentenUrl: url [0..1]
-    + {field} Sprache: code <back:#yellow>[0..1 / ISiK: 1..1]</back>
-    + {field} <back:#yellow>ISiK: Erstellungsdatum: dateTime [1..1]</back>
+'   + {field} Sprache: code <back:#yellow>[0..1 / ISiK: 1..1]</back>
+    + {field} Sprache: code [0..1]
+'   + {field} <back:#yellow>ISiK: Erstellungsdatum: dateTime [1..1]</back>
+    + {field} Erstellungsdatum: dateTime [0..1]
 }
 
 ' Beziehungen
 Dokument *- "1..*" Inhalt: content >
-Dokument *-- "0..1" Kontext: context >
+Dokument *-l- "0..1" Kontext: context >
 Dokument *-- "0..*" Dokumentenbeziehung: relatesTo >
 Dokument o-u- "0..1" Person: subject >
 Dokumentenbeziehung -- Dokument: target >
-Inhalt -r- Anhang: attachment >
-Kontext o-- "0..*" Fall: encounter >
+Inhalt -d- Anhang: attachment >
+Kontext o-d- "0..*" Fall: encounter >
 Einrichtungskontakt -- "0..*" Abteilungskontakt
 Abteilungskontakt -- "0..*" Versorgungsstellenkontakt
 
