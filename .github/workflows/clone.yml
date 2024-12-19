@@ -14,11 +14,11 @@ on:
   workflow_dispatch: {} # manual dispatch
 
 jobs:
-  build:
+  mirror-to-gitlab:
     runs-on: ubuntu-latest
     steps:
     - name: Change to default branch
-      run: git config --global init.defaultBranch main
+      run: git config --global init.defaultBranch master
     - uses: actions/checkout@v4
       with:
         fetch-depth: '0'  # shallow-clone push is not allowed
