@@ -1,4 +1,4 @@
-# Medizininformatik-Initiative Erweiterungsmodul Dokument
+# EyeMatics Kerndatensatz
 
 ## Development Environment
 
