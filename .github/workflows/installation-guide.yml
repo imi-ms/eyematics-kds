@@ -1,0 +1,11 @@
+name: build-ig
+
+on: push
+
+jobs:
+    build-ig:
+        name: Implementation Guide
+        runs-on: ubuntu-latest
+        steps: 
+            - name: Generate Report
+              run: _genonce.bat
