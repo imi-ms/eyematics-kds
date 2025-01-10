@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - "**.fsh"
-      - "**/sushi-config.yaml"
     branches: [ main, dev ]
   pull_request:
     branches: [ main, dev ]
@@ -27,7 +26,7 @@ jobs:
         with:
           dotnet-version: "8.0"
       - name: Create temp dir and copy sushi project file
-        run: mkdir temp && cp -v "**/sushi-config.yaml" temp/
+        run: mkdir temp && cp -v ./sushi-config.yaml temp/
         shell: bash
       - name: Install sushi locally
         working-directory: temp
