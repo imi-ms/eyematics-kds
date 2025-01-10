@@ -23,4 +23,4 @@ RUN wget -q -P ${WORKSPACE_ROOT} https://github.com/plantuml/plantuml/releases/l
 USER vscode
 
 # Install Firely Terminal to handle FHIR packages
-RUN dotnet8-sdk tool install -g firely.terminal
+RUN dotnet tool install -g firely.terminal
