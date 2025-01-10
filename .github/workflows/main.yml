@@ -30,16 +30,16 @@ jobs:
       # Java and .NET are already installed on ubuntu-latest
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.4.0
+        uses: FirelyTeam/firely-terminal-pipeline@v0.6.0
         with:
           PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
           PATH_TO_EXAMPLES: fsh-generated/resources
           PATH_TO_QUALITY_CONTROL_RULES: qc/custom
-          DOTNET_VALIDATION_ENABLED: true
+          DOTNET_VALIDATION_ENABLED: false # true = This feature is part of a paid plan. Please upgrade your Simplifier license.
           JAVA_VALIDATION_ENABLED: true
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_DOTNET VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA
-          OUTPUT_FORMAT: RAW
           JAVA_VALIDATION_OPTIONS: -allow-example-urls true -tx n/a
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
-          JAVA_VALIDATOR_VERSION: 6.2.3
+          JAVA_VALIDATOR_VERSION: 6.5.2
+          ZTS_ENABLED: false

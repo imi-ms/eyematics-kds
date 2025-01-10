@@ -56,6 +56,9 @@ After following this instructions, a prepared docker image will be downloaded an
 
 ## Links
 
+### Implementation Guide
+* [EyeMatics Kerndatensatz (Latest)](https://imi-ms.github.io/eyematics-kds/)
+
 ### Specifications
 
 * [FHIR Profiling Specification (Latest)](https://www.hl7.org/fhir/profiling.html)
