@@ -20,6 +20,9 @@ jobs:
   CI_FHIR_VALIDATION:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -38,7 +41,6 @@ jobs:
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_DOTNET VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA
-          OUTPUT_FORMAT: RAW
           JAVA_VALIDATION_OPTIONS: -allow-example-urls true -tx n/a
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
