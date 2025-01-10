@@ -18,8 +18,33 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Get FHIR packages
-        uses: cybernop/fill-fhir-cache@v1
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: "8.0"
+      - name: Create temp dir and copy sushi project file
+        run: mkdir temp && cp -v ${{ inputs.project-dir }}/sushi-config.yaml temp/
+        shell: bash
+      - name: Install sushi locally
+        working-directory: temp
+        run: npm install -g fsh-sushi
+        shell: bash
+      - name: Install Firely Terminal
+        run: dotnet tool install -g firely.terminal
+        shell: bash
+      - name: Get dependencies
+        working-directory: temp
+        run: sushi
+        shell: bash
+      - name: Inflate FHIR packages
+        run: fhir inflate-cache
+        shell: bash
+      - name: Remove temporary files
+        run: npm remove -g fsh-sushi && rm -rf temp
+        shell: bash
       - name: Build profiles
         uses: cybernop/build-fhir-ig@v1
         with:
