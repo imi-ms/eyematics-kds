@@ -3,11 +3,11 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: mii-kerndatensatzmodul-dokument
-canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-dok
-name: MII_IG_Dokument_DE
-title: "MII IG Dokument"
-description: "Medizininformatik Initiative - Modul Dokument"
+id: eyematics-kerndatensatz
+canonical: https://eyematics.org/fhir/eyematics-kds
+name: EyeMatics_KDS
+title: "Eyematics Core Data Set"
+description: "Medizininformatik Initiative - EyeMatics "
 status: draft # draft | active | retired | unknown
 version: 2025.0.0-alpha
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -32,10 +32,10 @@ language: de-DE
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
 #     version: 1.0.0
 dependencies:
-  de.gematik.isik-dokumentenaustausch: 4.0.0-rc2
-  kbv.basis: 1.6.0
-  ihe.iti.mhd: 4.2.2
-  dvmd.kdl.r4: 2024.0.0
+#  de.gematik.isik-dokumentenaustausch: 4.0.0-rc2
+#  kbv.basis: 1.6.0
+#  ihe.iti.mhd: 4.2.2
+#  dvmd.kdl.r4: 2024.0.0
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can

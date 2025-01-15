@@ -1,0 +1,80 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "eyematics-kerndatensatz",
+  "language": "de-DE",
+  "url": "https://eyematics.org/fhir/eyematics-kds/ImplementationGuide/eyematics-kerndatensatz",
+  "version": "2025.0.0-alpha",
+  "name": "EyeMatics_KDS",
+  "title": "Eyematics Core Data Set",
+  "status": "draft",
+  "publisher": "Medizininformatik-Initiative",
+  "contact": [
+    {
+      "name": "Medizininformatik-Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Medizininformatik Initiative - EyeMatics ",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "276",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm"
+        }
+      ]
+    }
+  ],
+  "packageId": "eyematics-kerndatensatz",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-eyematics-iop"
+        },
+        "name": "Intraocular Pressure",
+        "description": "A measurement of a patient's intraocular pressure (in mmHg).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/iop-method"
+        },
+        "name": "IOP-Methods",
+        "description": "Describes the various methods of capturing IOP (Intraocular Pressure)",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2024+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

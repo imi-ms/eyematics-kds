@@ -1,19 +1,18 @@
 {
-     "name": "de.medizininformatikinitiative.kerndatensatz.dokument",
+     "name": "de.medizininformatikinitiative.eyematics.kerndatensatz",
      "version": "2025.0.0-alpha",
-     "description": "Medizininformatik Initiative - Modul Dokument",
+     "description": "Medizininformatik Initiative - EyeMatics Kerndatensatz",
      "keywords": [
        "MII",
        "KDS",
-       "Dokument"
+       "EyeMatics"
      ],
      "type": "IG",
      "license": "CC0-1.0",
      "canonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/ImplementationGuide/mii-ig-dok-de",
      "url": "https://simplifier.net/mii-erweiterungsmodul-dokument",
-     "title": "MII IG Dokument",
+     "title": "MII IG EyeMatics",
      "dependencies": {
-       "de.gematik.isik-dokumentenaustausch": "4.0.0-rc2",
        "kbv.basis": "1.6.0",
        "ihe.iti.mhd": "4.2.2",
        "dvmd.kdl.r4": "2024.0.0"
@@ -24,16 +23,16 @@
        "4.0.1"
      ],
      "language": "de-DE",
-     "homepage": "https://www.medizininformatik-initiative.de",
+     "homepage": "https://www.eyematics.org/",
      "maintainers" : [{
        "name" : "Medizininformatik Initiative",
        "url" : "https://www.medizininformatik-initiative.de"
      }],
      "bugs": {
-       "url": "https://github.com/medizininformatik-initiative/kerndatensatzmodul-dokument/issues"
+       "url": "https://github.com/imi-ms/eyematics-kds/issues"
      },
      "repository": {
        "type": "git",
-       "url": "https://github.com/medizininformatik-initiative/kerndatensatzmodul-dokument.git"
+       "url": "https://github.com/imi-ms/eyematics-kds.git"
      }
    }
