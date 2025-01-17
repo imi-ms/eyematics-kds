@@ -1,5 +1,5 @@
 Profile: MII_EyeMatics_IOP
-Parent: Observation
+Parent: MII_EyeMatics_OphtalmicObservation
 Id: mii-eyematics-iop
 Title: "Intraocular Pressure"
 Description: "A measurement of a patient's intraocular pressure (in mmHg)."
@@ -8,12 +8,6 @@ Description: "A measurement of a patient's intraocular pressure (in mmHg)."
 * meta MS
 * meta.source MS
 * meta.profile MS
-* category MS
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this"
-* category ^slicing.rules = #open
-* category contains exam 1..1 MS
-* category[exam] = $observation-category#exam
 * code MS
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
@@ -23,8 +17,6 @@ Description: "A measurement of a patient's intraocular pressure (in mmHg)."
 * code.coding[loinc] = $loinc#67162-8
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].code 1.. MS
-* subject 1..1 MS
-* subject only Reference(Patient)
 * effective[x] only dateTime
 * value[x] only Quantity
 * valueQuantity.unit = "mm[Hg]"
