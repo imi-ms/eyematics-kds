@@ -55,7 +55,7 @@ jobs:
           name: package
           path: output/package.tgz
       - name: Archive generated pages
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: output
 
