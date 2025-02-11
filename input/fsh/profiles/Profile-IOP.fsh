@@ -22,6 +22,8 @@ Description: "A measurement of a patient's intraocular pressure (in mmHg)."
 * effectiveDateTime MS
 * value[x] MS
 * value[x] only Quantity
-* valueQuantity = 'mm[Hg]'
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.unit = "mm[Hg]"
+* valueQuantity.code = #'mm[Hg]'
 * valueQuantity ^short = "The IOP measured in mmHg"
 * method from VS_IOP_Method
