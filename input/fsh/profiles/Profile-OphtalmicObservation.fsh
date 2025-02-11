@@ -12,3 +12,10 @@ Description: "This is a profile as a common ground for all the other profiles, s
 * category[exam] = $observation-category#exam
 * subject 1..1 MS
 * subject only Reference(Patient)
+* bodySite MS
+* bodySite.coding ^slicing.discriminator.type = #pattern
+* bodySite.coding ^slicing.discriminator.path = "$this"
+* bodySite.coding ^slicing.rules = #open
+* bodySite.coding contains laterality 1..1 MS
+* bodySite.coding[laterality] from VS_Eye_Laterality (required)
+* obeys iop-laterality
