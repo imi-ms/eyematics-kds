@@ -18,6 +18,10 @@ Description: "A measurement of a patient's intraocular pressure (in mmHg)."
 * code.coding[loinc] = $loinc#56844-4 "Intraocular pressure of Eye"
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].code 1.. MS
+* code.coding contains snomed 1.. MS
+* code.coding[snomed] = $SCT#41633001 " Intraocular pressure (observable entity)"
+* code.coding[snomed].system 1.. MS
+* code.coding[snomed].code 1.. MS
 * effective[x] only dateTime
 * effectiveDateTime MS
 * value[x] MS
