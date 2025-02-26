@@ -1,0 +1,8 @@
+Extension: LensDuringVATestSpecification
+Id: observation-foo
+Title: "Do not perform"
+Description: "Specification any Lens that was n front of an eye during a Visual Acuity test test"
+Context: NutritionOrder
+* ^status = #draft
+* value[x] 1..
+* value[x] only boolean
