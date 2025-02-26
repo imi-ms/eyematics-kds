@@ -40,7 +40,7 @@ Description: "An assessment of a patients ability to see"
 * bodySite 1..
 * bodySite from VS_Eye_Laterality (required)
 * bodySite ^definition = "Which eye(s) were used for the visual acuity test? note that both eyes refers to a binocular visuin test, it does not mean that each of the eyes alone has the specified VA value! Also, when a Patient uses an extrocular device such as a worn camera devicefor the VA test, please use \"Topography not assigned\" and use specify the device in observation.device"
-* method from $ValueSet-observation-visual-acuity-methods (preferred)
+* method from VS_VA_Methods (preferred)
 * method ^short = "VA measurement Method"
 * method ^definition = "This is used to document the general Method by which VA measurement performed, Note that all Visual acuity Charts with optotypes are either a \"Visual Acuity Chart\" or \"Near Card\", the optotypes are specified as a .component."
 * method.coding ..1
@@ -84,7 +84,7 @@ Description: "An assessment of a patients ability to see"
 * component[Optotype-used] ^definition = "The type of image or symbol that the patient had to discern for the Visual Acuity test, typically on a chart, card, screen, or projector image."
 * component[Optotype-used].code = #Optotype "Optotype" (exactly)
 * component[Optotype-used].value[x] only CodeableConcept
-* component[Optotype-used].value[x] from VS_VA_Categorial_Values (preferred)
+* component[Optotype-used].value[x] from VS_VA_Optotypes (preferred)
 * component[SpecialVATestingParameters] ^sliceName = "SpecialVATestingParameters"
 * component[SpecialVATestingParameters].code = $SCT#370115009 "Special Concept" (exactly)
 * component[SpecialVATestingParameters].value[x] only CodeableConcept
