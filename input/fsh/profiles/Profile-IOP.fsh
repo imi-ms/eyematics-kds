@@ -31,3 +31,15 @@ Description: "A measurement of a patient's intraocular pressure (in mmHg)."
 * valueQuantity.code = #'mm[Hg]'
 * valueQuantity ^short = "The IOP measured in mmHg"
 * method from VS_IOP_Method
+* component ^slicing.discriminator[0].type = #value
+* component ^slicing.discriminator[=].path = "code"
+* component ^slicing.discriminator[+].type = #value
+* component ^slicing.discriminator[=].path = "value"
+* component ^slicing.ordered = false
+* component ^slicing.rules = #open
+* component contains
+    Myadrisis 0..1 
+* component[Myadrisis].code = $SCT#37125009 "Dilated pupil (finding)" (exactly) //TODO: Finde besseren Code
+* component[Myadrisis].value[x] only CodeableConcept
+* component[Myadrisis].value[x] from VS_Performed_NotPerformed (required)
+* component[Myadrisis] ^sliceName = "Myadrisis"
