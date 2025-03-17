@@ -75,6 +75,6 @@ After following this instructions, a prepared docker image will be downloaded an
 * [Simplifier (FHIR Authoring, Publishing, Registry)](https://simplifier.net)
 * [Firely Terminal (FHIR CLI Tool)](https://docs.fire.ly/projects/Firely-Terminal/index.html)
 
-### Additional Learning Materials
+### Additional Learning Materials 
 
 * [FSH School Courses](https://fshschool.org/courses/)
