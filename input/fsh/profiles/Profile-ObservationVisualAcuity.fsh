@@ -56,6 +56,8 @@ Description: "An assessment of a patients ability to see"
     Correction-in-front-of-left-eye 0..1 and
     Test-Distance 0..1 and
     Optotype-used 0..1 and
+    Myadrisis 0..1 and
+    Pinhole-Occluder-used 0..1 and
     SpecialVATestingParameters 0..
 // * component[Correction-in-front-of-right-eye] ^sliceName = "Correction-in-front-of-right-eye"
 // * component[Correction-in-front-of-right-eye].extension ..1
@@ -85,6 +87,14 @@ Description: "An assessment of a patients ability to see"
 * component[Optotype-used].code = #Optotype "Optotype" (exactly)
 * component[Optotype-used].value[x] only CodeableConcept
 * component[Optotype-used].value[x] from VS_VA_Optotypes (preferred)
+* component[Myadrisis].code = $SCT#37125009 "Dilated pupil (finding)" (exactly) //TODO: Finde besseren Code
+* component[Myadrisis].value[x] only CodeableConcept
+* component[Myadrisis].value[x] from VS_Performed_NotPerformed (required)
+* component[Myadrisis] ^sliceName = "Myadrisis"
+* component[Pinhole-Occluder-used].code = $SCT#257492003 "Pinhole (physical object)" (exactly)
+* component[Pinhole-Occluder-used].value[x] only CodeableConcept
+* component[Pinhole-Occluder-used].value[x] from VS_Used_NotUsed (required)
+* component[Pinhole-Occluder-used] ^sliceName = "Pinhole Occluder used"
 * component[SpecialVATestingParameters] ^sliceName = "SpecialVATestingParameters"
 * component[SpecialVATestingParameters].code = $SCT#370115009 "Special Concept" (exactly)
 * component[SpecialVATestingParameters].value[x] only CodeableConcept

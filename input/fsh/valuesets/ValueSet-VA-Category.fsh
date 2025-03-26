@@ -1,7 +1,7 @@
 ValueSet: VS_VA_Categorial_Values
 Id: va-categorial-values
 Title: "Visual Acuity Categorial Values"
-Description: ""
+Description: "A value set representing categorical values for visual acuity assessments."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/va-categorial-values"
 * ^version = "0.1.0"
 * ^status = #draft

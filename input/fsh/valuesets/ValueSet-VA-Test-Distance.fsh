@@ -1,7 +1,7 @@
 ValueSet: VS_VA_Test_Distance
 Id: va-test-distance
 Title: "Visual Acuity Test Distance"
-Description: ""
+Description: "A value set representing different test distances."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/va-test-distance"
 * ^version = "0.1.0"
 * ^status = #draft
