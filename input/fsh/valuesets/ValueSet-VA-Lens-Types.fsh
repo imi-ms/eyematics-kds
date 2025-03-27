@@ -1,7 +1,7 @@
 ValueSet: VS_VA_Lens_Types
 Id: lens-types
 Title: "VA-Lens-Types"
-Description: "Describes the various methods of capturing IOP (Intraocular Pressure)"
+Description: "This ValueSet includes codes representing different types of lenses used in ophthalmology. It covers contact lenses, eyeglasses and trial lenses."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/lens-types"
 * ^version = "0.1.0"
 * ^status = #draft
