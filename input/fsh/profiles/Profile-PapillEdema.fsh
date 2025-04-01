@@ -21,5 +21,6 @@ Description: "An observation determining the presence or absence of papilledema 
 * effective[x] only dateTime
 * effectiveDateTime MS
 * value[x] MS
-* value[x] only boolean
-* valueBoolean ^short = "Indicates whether papilledema is present (true) or not (false)"
+* value[x] only CodeableConcept
+* valueCodeableConcept from VS_Present_Absent
+* valueCodeableConcept ^short = "Indicates whether papilledema is present (true) or not (false)"
