@@ -98,11 +98,11 @@ fi
 if [[ $skipPrompts != true ]]; then
     message="Update scripts? (enter 'y' or 'Y' to continue, any other key to cancel)?"
     read -r -p "$message" response
-  fi
+fi
 
 if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
-  echo "Downloading most recent scripts "
-  # test
+  echo "Downloading most recent scripts"
+
   curl -L $update_bat_url -o /tmp/_updatePublisher.new
   cp /tmp/_updatePublisher.new _updatePublisher.bat
   rm /tmp/_updatePublisher.new
@@ -121,6 +121,10 @@ if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
   rm /tmp/_gencontinuous.new
 
   curl -L $gen_sh_url -o /tmp/_genonce.new
+  if [ $? -ne 0 ]; then
+    echo "Fehler beim Herunterladen von $gen_sh_url"
+    exit 1
+  fi
   cp /tmp/_genonce.new _genonce.sh
   chmod +x _genonce.sh
   rm  /tmp/_genonce.new
