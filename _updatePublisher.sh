@@ -12,6 +12,8 @@ gencont_bat_url=$scriptdlroot/_gencontinuous.bat
 gencont_sh_url=$scriptdlroot/_gencontinuous.sh
 gen_sh_url=$scriptdlroot/_genonce.sh
 update_sh_url=$scriptdlroot/_updatePublisher.sh
+build_sh_url=$scriptdlroot/_build.sh
+build_bat_url=$scriptdlroot/_build.bat
 
 skipPrompts=false
 FORCE=false
@@ -101,7 +103,17 @@ if [[ $skipPrompts != true ]]; then
 fi
 
 if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
-  echo "Downloading most recent scripts"
+  echo "Downloading most recent scripts:"
+
+  curl -L $build_bat_url -o /tmp/_build.new
+  cp /tmp/_build.new _build.bat
+  rm /tmp/_build.new
+
+
+  curl -L $build_sh_url -o /tmp/_build.new
+  cp /tmp/_build.new _build.sh
+  chmod +x _build.sh
+  rm /tmp/_build.new
 
   curl -L $update_bat_url -o /tmp/_updatePublisher.new
   cp /tmp/_updatePublisher.new _updatePublisher.bat
@@ -121,10 +133,6 @@ if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
   rm /tmp/_gencontinuous.new
 
   curl -L $gen_sh_url -o /tmp/_genonce.new
-  if [ $? -ne 0 ]; then
-    echo "Fehler beim Herunterladen von $gen_sh_url"
-    exit 1
-  fi
   cp /tmp/_genonce.new _genonce.sh
   chmod +x _genonce.sh
   rm  /tmp/_genonce.new
