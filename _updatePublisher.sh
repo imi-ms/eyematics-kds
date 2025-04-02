@@ -141,4 +141,6 @@ if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
   cp /tmp/_updatePublisher.new _updatePublisher.sh
   chmod +x _updatePublisher.sh
   rm /tmp/_updatePublisher.new
+
+  echo "Downloading successful!"
 fi
