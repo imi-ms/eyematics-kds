@@ -67,7 +67,7 @@ jobs:
         shell: bash
       - run: wget -q https://raw.githubusercontent.com/HL7/ig-publisher-scripts/main/_updatePublisher.sh && chmod a+x _updatePublisher.sh
         shell: bash
-      - run: cat ./_updatePublisher.sh
+      - run: sed -n '133p' _updatePublisher.sh
         shell: bash
       - run: ./_updatePublisher.sh -y && chmod a+x _genonce.sh
         shell: bash
