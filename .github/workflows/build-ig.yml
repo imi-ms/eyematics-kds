@@ -65,10 +65,6 @@ jobs:
         shell: bash
       - run: java -jar plantuml.jar -tsvg -o ../images input/images-source
         shell: bash
-      - run: wget -q https://raw.githubusercontent.com/HL7/ig-publisher-scripts/main/_updatePublisher.sh && chmod a+x _updatePublisher.sh
-        shell: bash
-      - run: sed -n '133p' _updatePublisher.sh
-        shell: bash
       - run: ./_updatePublisher.sh -y && chmod a+x _genonce.sh
         shell: bash
       - run: ./_genonce.sh
