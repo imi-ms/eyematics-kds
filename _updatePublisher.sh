@@ -102,7 +102,7 @@ if [[ $skipPrompts != true ]]; then
 
 if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
   echo "Downloading most recent scripts "
-
+  # test
   curl -L $update_bat_url -o /tmp/_updatePublisher.new
   cp /tmp/_updatePublisher.new _updatePublisher.bat
   rm /tmp/_updatePublisher.new
