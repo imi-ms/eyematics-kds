@@ -23,3 +23,9 @@ Description: "Retinal thickness measured via OCT."
 * valueQuantity.unit = "µm"
 * valueQuantity.code = #'um'
 * valueQuantity ^short = "The retinal thickness measured in µm"
+* derivedFrom MS
+* derivedFrom only Reference(ImagingStudy)
+* derivedFrom ^short = "Reference to the OCT ImagingStudy used for this measurement"
+* device MS
+* device only Reference(Device)
+* device ^short = "OCT device used for the measurement"

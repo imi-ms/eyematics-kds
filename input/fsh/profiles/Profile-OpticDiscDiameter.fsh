@@ -26,3 +26,9 @@ Description: "Optic disc diameter measured via OCT."
 * valueQuantity.unit = "mm"
 * valueQuantity.code = #'mm'
 * valueQuantity ^short = "The diameter of the optic disc measured in mm"
+* derivedFrom MS
+* derivedFrom only Reference(ImagingStudy)
+* derivedFrom ^short = "Reference to the OCT ImagingStudy used for this measurement"
+* device MS
+* device only Reference(Device)
+* device ^short = "OCT device used for the measurement"
