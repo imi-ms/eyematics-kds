@@ -45,15 +45,32 @@ jobs:
       - name: Remove temporary files
         run: npm remove -g fsh-sushi && rm -rf temp
         shell: bash
-      - name: Build profiles
-        uses: cybernop/build-fhir-ig@v1
+      - uses: actions/setup-node@v2
         with:
-          sushi-version: "3.12.1"
-      - name: Archive profile artifacts
-        uses: actions/upload-artifact@v4
+          node-version: "18"
+      - uses: actions/setup-java@v3
         with:
-          name: package
-          path: output/package.tgz
+          distribution: "temurin"
+          java-version: "17"
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.0"
+      - run: npm install -g fsh-sushi@v3.12.1
+        shell: bash
+      - run: gem install jekyll
+        shell: bash
+      - run: sudo apt update && sudo apt install graphviz
+        shell: bash
+      - run: wget -q https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar
+        shell: bash
+      - run: java -jar plantuml.jar -tsvg -o ../images input/images-source
+        shell: bash
+      - run: cat ./_updatePublisher.sh
+        shell: bash
+      - run: ./_updatePublisher.sh -y && chmod a+x _genonce.sh
+        shell: bash
+      - run: ./_genonce.sh
+        shell: bash
       - name: Archive generated pages
         id: deployment
         uses: actions/upload-pages-artifact@v3
