@@ -8,9 +8,9 @@ Description: "A value set representing various optotypes used in visual acuity t
 * ^experimental = true
 * ^date = "2025-04-17"
 * $atc#S01LA05 "Aflibercept"
-* $atc#L01FG01
-* $atc#S01LA06
-* $atc#S01LA09
-* $atc#S01LA04
-* $atc#S01BA01
-* $atc#S01XA22
+* $atc#L01FG01 "Bevacizumab"
+* $atc#S01LA06 "Brolucizumab"
+* $atc#S01LA09 "Faricimab"
+* $atc#S01LA04 "Ranibizumab"
+* $atc#S01BA01 "Dexamethason"
+* $atc#S01XA22 "Ocriplasmin"
