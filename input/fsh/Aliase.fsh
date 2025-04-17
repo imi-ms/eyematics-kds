@@ -7,3 +7,4 @@ Alias: $ValueSet-observation-visual-acuity-methods = https://eyematics.org/fhir/
 Alias: $ValueSet-observation-visual-acuity = https://eyematics.org/fhir/eyematics-kds/ValueSet/va-code
 Alias: $ValueSet-observation-visual-acuity-quantity-units = https://eyematics.org/fhir/eyematics-kds/ValueSet/va-quantity-units
 Alias: $ValueSet-observation-visual-acuity-categorial-values = https://eyematics.org/fhir/eyematics-kds/ValueSet/va-categorial-values
+Alias: $atc = http://fhir.de/CodeSystem/bfarm/atc

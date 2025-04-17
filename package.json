@@ -15,7 +15,8 @@
      "dependencies": {
        "kbv.basis": "1.6.0",
        "ihe.iti.mhd": "4.2.2",
-       "dvmd.kdl.r4": "2024.0.0"
+       "dvmd.kdl.r4": "2024.0.0",
+       "de.medizininformatikinitiative.kerndatensatz.medikation": "2025.0.0"
      },
      "author": "Medizininformatik Initiative",
      "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
