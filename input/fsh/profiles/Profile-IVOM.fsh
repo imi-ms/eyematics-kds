@@ -7,6 +7,7 @@ Description: "Ein MedicationRequest beschreibt die Anordnung und die Anweisungen
 * meta MS
 * meta.source MS
 * meta.profile MS
+* medication[x] only Reference(MII_EyeMatics_IVOM_Medication)
 * dosageInstruction.site from VS_Eye_Laterality
 * dosageInstruction.route = http://standardterms.edqm.eu#20047000 "Intravitreal use"
 * dosageInstruction.extension contains IVOM_TreatmentRegimen named IVOM_TreatmentRegimen 0..1
