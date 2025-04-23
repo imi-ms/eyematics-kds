@@ -1,7 +1,7 @@
 ValueSet: VS_IVOM_Medication
 Id: ivom-medication
 Title: "IVOM Medication"
-Description: "A value set representing various optotypes used in visual acuity testing."
+Description: "ValueSet representing various optotypes used in visual acuity testing."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/ivom-medication"
 * ^version = "0.1.0"
 * ^status = #draft

@@ -1,7 +1,7 @@
 ValueSet: VS_VA_Special_Testing_Parameters
 Id: va-special-testing-parameters
 Title: "Visual Acuity Special Testing Parameters"
-Description: "A value set representing special parameters used in visual acuity testing that go beyond standard acuity measures."
+Description: "ValueSet representing special parameters used in visual acuity testing that go beyond standard acuity measures."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/va-special-testing-parameters"
 * ^version = "0.1.0"
 * ^status = #draft

@@ -1,7 +1,7 @@
 ValueSet: VS_Eye_Laterality
 Id: eye-laterality
-Title: "Eye.Laterality"
-Description: "Describes which eye of the patient was analyzed"
+Title: "Eye Laterality"
+Description: "Describes which eye of the patient was analyzed."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/eye-laterality"
 * ^version = "0.1.0"
 * ^status = #draft

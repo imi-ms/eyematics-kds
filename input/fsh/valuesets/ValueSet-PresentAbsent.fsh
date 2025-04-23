@@ -1,7 +1,7 @@
 ValueSet: VS_Present_Absent
 Id: vs-present-absent
-Title: "Present-Absent"
-Description: "A value set containing codes that indicate the presence, absence, or unknown status of a clinical finding or condition."
+Title: "Present Absent"
+Description: "ValueSet containing codes that indicate the presence, absence, or unknown status of a clinical finding or condition."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/present-absent"
 * ^version = "0.1.0"
 * ^status = #draft

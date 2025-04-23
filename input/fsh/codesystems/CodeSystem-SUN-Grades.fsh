@@ -13,9 +13,4 @@ Description: "Grades of the Standardization of uveitis nomenclature"
 * ^compositional = false
 * ^versionNeeded = true
 * ^content = #complete
-* #0 "0" "< 1 per mm^2"
-* #(+) "(+)" "1-5 per mm^2"
-* #+ "+" "6-15 per mm^2"
-* #++ "++" "16-25 per mm^2"
-* #+++ "+++" "26-50 per mm^2"
-* #++++ "++++" ">50 per mm^2"
+* #(+) "(+)" "Present (+) out of ++++ (qualifier value)"

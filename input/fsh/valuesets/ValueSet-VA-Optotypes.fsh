@@ -1,7 +1,7 @@
 ValueSet: VS_VA_Optotypes
 Id: va-optotypes
 Title: "Visual Acuity Optotypes"
-Description: "A value set representing various optotypes used in visual acuity testing."
+Description: "ValueSet representing various optotypes used in visual acuity testing."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/va-optotypes"
 * ^version = "0.1.0"
 * ^status = #draft

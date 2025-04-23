@@ -1,7 +1,7 @@
 ValueSet: VS_VA_Methods
 Id: va-methods
-Title: "VA-Methods"
-Description: "Describes the various charts that can be used to assess visual acuity where concept descends from 400912000 (Visual acuity test equipment (physical object))"
+Title: "VA Methods"
+Description: "Describes the various charts that can be used to assess visual acuity where concept descends from 400912000 (Visual acuity test equipment (physical object))."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/va-methods"
 * ^version = "0.1.0"
 * ^status = #draft
