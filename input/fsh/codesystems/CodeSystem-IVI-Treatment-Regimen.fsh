@@ -1,7 +1,7 @@
-CodeSystem: IVOM_TreatmentRegimen
-Id: ivom-treatment-regimen
-Title: "IVOM Treatment Regimen"
-Description: "IVOM Treatment Regimen or Protocol"
+CodeSystem: IVI_TreatmentRegimen
+Id: ivi-treatment-regimen
+Title: "IVI Treatment Regimen"
+Description: "IVI Treatment Regimen or Protocol"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^date = "2025-04-17"
