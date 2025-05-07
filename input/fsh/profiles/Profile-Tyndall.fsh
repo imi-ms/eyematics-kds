@@ -27,4 +27,3 @@ Description: "Tyndall effect as seen during slit-lamp examination"
 * value[x] MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from VS_Tyndall_Grades
-* method from VS_IOP_Method

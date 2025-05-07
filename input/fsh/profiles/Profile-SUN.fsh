@@ -27,4 +27,3 @@ Description: "Standardization of uveitis nomenclature"
 * value[x] MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from VS_SUN_Grades
-* method from VS_IOP_Method
