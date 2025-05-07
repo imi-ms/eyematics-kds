@@ -1,7 +1,7 @@
 ValueSet: VS_IOP_Code
 Id: iop-code
-Title: "IOP-Code"
-Description: "Codes that describe "
+Title: "IOP Code"
+Description: "Codes used to specify the laterality of the eye."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/iop-code"
 * ^version = "0.1.0"
 * ^status = #draft

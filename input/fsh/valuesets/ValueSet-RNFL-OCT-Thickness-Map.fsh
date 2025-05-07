@@ -1,7 +1,7 @@
 ValueSet: VS_RNFL_OCT_Thickness_Map
 Id: vs-rnfl-oct-thickness-map
 Title: "Retinal nerve fiber layer OCT Thickness Map"
-Description: "A value set representing the various thickness measurements of the retinal nerve fiber layer (RNFL) obtained through OCT."
+Description: "ValueSet representing the various thickness measurements of the retinal nerve fiber layer (RNFL) obtained through OCT."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/vs-rnfl-oct-thickness-map"
 * ^version = "0.1.0"
 * ^status = #draft

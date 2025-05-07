@@ -1,5 +1,5 @@
 Profile: MII_EyeMatics_RNFL_Thickness
-Parent: MII_EyeMatics_OphtalmicObservation
+Parent: MII_EyeMatics_OphthalmicObservation
 Id: mii-eyematics-rnfl-thickness
 Title: "RNFL Thickness"
 Description: "Retinal nerve fiber layer thickness measured via OCT."
@@ -8,7 +8,7 @@ Description: "Retinal nerve fiber layer thickness measured via OCT."
 * meta MS
 * meta.source MS
 * meta.profile MS
-* status = #final
+* status = #draft
 * code MS
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #value

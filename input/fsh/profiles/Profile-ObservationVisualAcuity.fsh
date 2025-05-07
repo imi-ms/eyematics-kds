@@ -1,8 +1,8 @@
 Profile: MII_EyeMatics_VisualAcuity
-Parent: MII_EyeMatics_OphtalmicObservation
+Parent: MII_EyeMatics_OphthalmicObservation
 Id: observation-visual-acuity
 Title: "Visual Acuity (VA)"
-Description: "An assessment of a patients ability to see"
+Description: "An assessment of a patients ability to see."
 * ^status = #draft
 * ^experimental = true
 * code = $SCT#260246004 "Visual Acuity finding" (exactly)
@@ -94,7 +94,7 @@ Description: "An assessment of a patients ability to see"
 * component[Pinhole-Occluder-used].code = $SCT#257492003 "Pinhole (physical object)" (exactly)
 * component[Pinhole-Occluder-used].value[x] only CodeableConcept
 * component[Pinhole-Occluder-used].value[x] from VS_Used_NotUsed (required)
-* component[Pinhole-Occluder-used] ^sliceName = "Pinhole Occluder used"
+* component[Pinhole-Occluder-used] ^sliceName = "Pinhole-Occluder-used"
 * component[SpecialVATestingParameters] ^sliceName = "SpecialVATestingParameters"
 * component[SpecialVATestingParameters].code = $SCT#370115009 "Special Concept" (exactly)
 * component[SpecialVATestingParameters].value[x] only CodeableConcept

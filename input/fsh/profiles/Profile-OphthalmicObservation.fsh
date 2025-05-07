@@ -1,4 +1,4 @@
-Profile: MII_EyeMatics_OphtalmicObservation
+Profile: MII_EyeMatics_OphthalmicObservation
 Parent: Observation
 Id: mii-eyematics-observation-base
 Title: "Ophthalmic Observation Base Profile"

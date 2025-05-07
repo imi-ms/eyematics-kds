@@ -1,7 +1,7 @@
 ValueSet: VS_Macular_OCT_Thickness_Map
 Id: vs-macular-oct-thickness-map
 Title: "Macular OCT Thickness Map"
-Description: "A value set representing the various subfield thickness measurements of the macula obtained through OCT."
+Description: "ValueSet representing the various subfield thickness measurements of the macula obtained through OCT."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/vs-macular-oct-thickness-map"
 * ^version = "0.1.0"
 * ^status = #draft

@@ -1,5 +1,5 @@
 Profile: MII_EyeMatics_RetinalVasculitis
-Parent: MII_EyeMatics_OphtalmicObservation
+Parent: MII_EyeMatics_OphthalmicObservation
 Id: mii-eyematics-retinal-vasculitis
 Title: "Retinal Vasculitis"
 Description: "An observation determining the presence or absence of retinal vasculitis."
@@ -8,7 +8,7 @@ Description: "An observation determining the presence or absence of retinal vasc
 * meta MS
 * meta.source MS
 * meta.profile MS
-* status = #final
+* status = #draft
 * code MS
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern

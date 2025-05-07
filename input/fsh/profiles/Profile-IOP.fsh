@@ -1,14 +1,14 @@
 Profile: MII_EyeMatics_IOP
-Parent: MII_EyeMatics_OphtalmicObservation
+Parent: MII_EyeMatics_OphthalmicObservation
 Id: mii-eyematics-iop
 Title: "Intraocular Pressure"
 Description: "A measurement of a patient's intraocular pressure (in mmHg)."
-* ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/iop"
+* ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/IOP"
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
-* status = #final
+* status = #draft
 * code MS
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
@@ -30,7 +30,7 @@ Description: "A measurement of a patient's intraocular pressure (in mmHg)."
 * valueQuantity.unit = "mm[Hg]"
 * valueQuantity.code = #'mm[Hg]'
 * valueQuantity ^short = "The IOP measured in mmHg"
-* method from VS_IOP_Method
+* method from VS_IOP_Methods
 * component ^slicing.discriminator[0].type = #value
 * component ^slicing.discriminator[=].path = "code"
 * component ^slicing.discriminator[+].type = #value
