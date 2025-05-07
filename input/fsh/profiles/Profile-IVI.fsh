@@ -1,7 +1,7 @@
 Profile: MII_EyeMatics_IVI_MedicationRequest
 Parent: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
 Id: mii-eyematics-ivi-medicationrequest
-Title: "IVOM-Medikationsverordnung"
+Title: "IVI-Medikationsverordnung"
 Description: "Ein MedicationRequest beschreibt die Anordnung und die Anweisungen zur Verabreichung des Medikaments an einen Patienten, in diesem Fall die Gabe eines Medikaments mit einer IVOM-Spritze. Dieses Profil basiert auf dem MII-Medikations-Kerndatensatzprofil."
 * id MS
 * meta MS
