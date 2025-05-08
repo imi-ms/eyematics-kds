@@ -7,4 +7,5 @@ Description: "Describes the various charts that can be used to assess visual acu
 * ^status = #draft
 * ^experimental = true
 * ^date = "2025-02-18"
-* include codes from system $SCT where concept descendant-of $SCT#400912000 "Visual acuity test equipment (physical object)"
+* $SCT#416307006 "Laser inferometer for potential acuity testing (physical object)"
+* $SCT#418570001 "Accommodative rule (physical object)"
