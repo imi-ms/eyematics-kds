@@ -9,3 +9,4 @@ Alias: $ValueSet-observation-visual-acuity-quantity-units = https://eyematics.or
 Alias: $ValueSet-observation-visual-acuity-categorial-values = https://eyematics.org/fhir/eyematics-kds/ValueSet/va-categorial-values
 Alias: $atc = http://fhir.de/CodeSystem/bfarm/atc
 Alias: $EDQM = http://standardterms.edqm.eu 
+Alias: $OPS = http://fhir.de/CodeSystem/bfarm/ops

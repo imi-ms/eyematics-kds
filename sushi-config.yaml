@@ -33,6 +33,7 @@ language: de-DE
 #     version: 1.0.0
 dependencies:
   de.medizininformatikinitiative.kerndatensatz.medikation: "2025.0.0"
+  de.medizininformatikinitiative.kerndatensatz.prozedur: "2025.0.0"
 #  de.gematik.isik-dokumentenaustausch: 4.0.0-rc2
 #  kbv.basis: 1.6.0
 #  ihe.iti.mhd: 4.2.2
