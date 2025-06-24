@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_IrisSynechiae
 Parent: MII_EyeMatics_OphthalmicObservation
-Id: mii-eyematics-iris-synechiae
+Id: IrisSynechiae
 Title: "Synechiae of Iris"
 Description: "An observation determining the presence or absence of iris synechiae (adhesions involving the iris)."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/IrisSynechiae"

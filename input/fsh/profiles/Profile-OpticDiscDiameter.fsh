@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_OpticDiscDiameter
 Parent: MII_EyeMatics_OphthalmicObservation
-Id: mii-eyematics-optic-disc-diameter
+Id: OpticDiscDiameter
 Title: "Optic Disc Diameter"
 Description: "Optic disc diameter measured via OCT."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/OpticDiscDiameter"

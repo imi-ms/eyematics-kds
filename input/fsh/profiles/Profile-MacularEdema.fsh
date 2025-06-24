@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_MacularEdema
 Parent: MII_EyeMatics_OphthalmicObservation
-Id: mii-eyematics-macular-edema
+Id: MacularEdema
 Title: "Macular Edema"
 Description: "An observation determining the presence or absence of macular edema in the retina."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/MacularEdema"

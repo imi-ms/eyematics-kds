@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_RetinalThickness
 Parent: MII_EyeMatics_OphthalmicObservation
-Id: mii-eyematics-retinal-thickness
+Id: RetinalThickness
 Title: "Retinal Thickness"
 Description: "Retinal thickness measured via OCT."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/RetinalThickness"

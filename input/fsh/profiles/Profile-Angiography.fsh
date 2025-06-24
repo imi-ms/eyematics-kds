@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_Angiography
 Parent: MII_EyeMatics_OphthalmicObservation
-Id: mii-eyematics-angiography
+Id: Angiography
 Title: "Angiography"
 Description: "Profile for recording ophthalmologic angiographic observations including reference to imaging studies and the device used."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/Angiography"

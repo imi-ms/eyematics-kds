@@ -1,8 +1,8 @@
 ValueSet: VS_IVI_MedicationForm
-Id: vs-ivi-medication-form
+Id: IVIMedicationForm
 Title: "IVI Medication Form"
 Description: "ValueSet of the IVI Medication Form"
-* ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/ivi-medication-form"
+* ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/IVIMedicationForm"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = true

@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_OphthalmicObservation
 Parent: Observation
-Id: mii-eyematics-observation-base
+Id: OphthalmicObservation
 Title: "Ophthalmic Observation Base Profile"
 Description: "This is a profile as a common ground for all the other profiles, so it should not be used directly."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/OphthalmicObservation"

@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_Anterior_Chamber_Flare
 Parent: MII_EyeMatics_OphthalmicObservation
-Id: mii-eyematics-anterior-chamber-flare
+Id: AnteriorChamberFlare
 Title: "Anterior Chamber Flare"
 Description: "A profile to capture anterior chamber flare observations in ophthalmology."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/AnteriorChamberFlare"

@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_OphthalmicDiagnosticReport
 Parent: DiagnosticReport
-Id: mii-eyematics-ophthalmic-diagnostic-report
+Id: OphthalmicDiagnosticReport
 Title: "Ophthalmic Diagnostic Report"
 Description: "A general diagnostic report for ophthalmological findings."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/OphthalmicDiagnosticReport"

@@ -1,8 +1,8 @@
 ValueSet: VS_Used_NotUsed
-Id: vs-used-not-used
+Id: Used-NotUsed
 Title: "Used NotUsed"
 Description: "ValueSet representing the status of a device, indicating whether it has been used or not."
-* ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/used-notused"
+* ^url = "https://eyematics.org/fhir/eyematics-kds/ValueSet/Used-NotUsed"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = true

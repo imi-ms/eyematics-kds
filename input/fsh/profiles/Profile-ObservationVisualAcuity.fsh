@@ -63,7 +63,7 @@ Description: "An assessment of a patients ability to see."
 // * component[Correction-in-front-of-right-eye].extension ..1
 * component[Correction-in-front-of-right-eye].extension contains LensDuringVATestSpecification named LensDuringVATestSpecification 0..1
 * component[Correction-in-front-of-right-eye].extension[LensDuringVATestSpecification] ^isModifier = false
-* component[Correction-in-front-of-right-eye].code = $loinc#29073-4 "Right Eye position" (exactly)
+* component[Correction-in-front-of-right-eye].code = $loinc#29073-4 "Right eye Position" (exactly)
 * component[Correction-in-front-of-right-eye].value[x] only CodeableConcept
 * component[Correction-in-front-of-right-eye].value[x] from VS_VA_Correction_Method (preferred)
 * component[Correction-in-front-of-left-eye] ^sliceName = "Correction-in-front-of-left-eye"
