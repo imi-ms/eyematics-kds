@@ -20,6 +20,11 @@ Description: "An observation determining the presence or absence of macular edem
 * code.coding[snomed].code 1.. MS
 * effective[x] only dateTime
 * effectiveDateTime MS
+* method MS
+* method 1..1
+* method from VS_MacularEdema_Method (required)
+* derivedFrom MS
+* derivedFrom ^short = "If value is based on OCT image, the imaging study should be linked here if possible." 
 * value[x] MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from VS_Present_Absent
