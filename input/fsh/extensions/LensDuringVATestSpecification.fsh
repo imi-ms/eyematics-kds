@@ -2,7 +2,7 @@ Extension: LensDuringVATestSpecification
 Id: LensDuringVATestSpecification
 Description: "Specification any Lens that was n front of an eye during a Visual Acuity test test"
 Context: Observation.component.extension
-* ^url = "https://larfuma.github.io/fhir-eyecare-ig/StructureDefinition/LensDuringVATestSpecification"
+* ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/LensDuringVATestSpecification"
 * ^status = #draft
 * extension ^slicing.ordered = false
 * extension ^slicing.rules = #open

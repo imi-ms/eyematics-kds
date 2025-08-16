@@ -12,6 +12,6 @@ Description: "A MedicationAdministration resource describes that a drug (in our 
 * effective[x] MS
 * effective[x] only dateTime
 * dosage.site MS
-* dosage.site from VS_Eye_Laterality
+* dosage.site from VS_Eye_Laterality (required)
 * dosage.route MS
 * dosage.route = http://standardterms.edqm.eu#20047000 "Intravitreal use"

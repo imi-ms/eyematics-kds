@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_RetinalVasculitis
 Parent: MII_EyeMatics_OphthalmicObservation
-Id: mii-eyematics-retinal-vasculitis
+Id: RetinalVasculitis
 Title: "Retinal Vasculitis"
 Description: "An observation determining the presence or absence of retinal vasculitis."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/RetinalVasculitis"

@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_Anterior_Chamber_Cells
 Parent: MII_EyeMatics_OphthalmicObservation
-Id: mii-eyematics-anterior-chamber-cells
+Id: AnteriorChamberCells
 Title: "Anterior Chamber Cells"
 Description: "A profile to capture anterior chamber cells observations in ophthalmology."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/AnteriorChamberCells"

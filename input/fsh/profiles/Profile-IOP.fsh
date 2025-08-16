@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_IOP
 Parent: MII_EyeMatics_OphthalmicObservation
-Id: mii-eyematics-iop
+Id: IOP
 Title: "Intraocular Pressure"
 Description: "A measurement of a patient's intraocular pressure (in mmHg)."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/IOP"
@@ -19,7 +19,7 @@ Description: "A measurement of a patient's intraocular pressure (in mmHg)."
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].code 1.. MS
 * code.coding contains snomed 1.. MS
-* code.coding[snomed] = $SCT#41633001 " Intraocular pressure (observable entity)"
+* code.coding[snomed] = $SCT#41633001 "Intraocular pressure"
 * code.coding[snomed].system 1.. MS
 * code.coding[snomed].code 1.. MS
 * effective[x] only dateTime

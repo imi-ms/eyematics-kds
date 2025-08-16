@@ -1,6 +1,6 @@
 Profile: MII_EyeMatics_PapillEdema
 Parent: MII_EyeMatics_OphthalmicObservation
-Id: mii-eyematics-papill-edema
+Id: PapillEdema
 Title: "Papill Edema"
 Description: "An observation determining the presence or absence of papilledema (swelling of the optic disc)."
 * ^url = "https://eyematics.org/fhir/eyematics-kds/StructureDefinition/PapillEdema"
