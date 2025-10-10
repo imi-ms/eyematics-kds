@@ -17,4 +17,3 @@ Description: "ValueSet representing the various subfield thickness measurements 
 * $loinc#57115-8 "Macular grid.outer nasal subfield thickness by OCT"
 * $loinc#57116-6 "Macular grid.outer inferior subfield thickness by OCT"
 * $loinc#57117-4 "Macular grid.outer temporal subfield thickness by OCT"
-* $loinc#57118-2 "Macular grid.total volume by OCT"
