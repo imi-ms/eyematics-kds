@@ -1,4 +1,5 @@
 .DS_Store
+.history
 fhirpkg.lock.json
 Thumbs.db
 /input-cache
