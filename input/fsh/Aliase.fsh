@@ -10,3 +10,4 @@ Alias: $ValueSet-observation-visual-acuity-categorial-values = https://eyematics
 Alias: $atc = http://fhir.de/CodeSystem/bfarm/atc
 Alias: $EDQM = http://standardterms.edqm.eu 
 Alias: $OPS = http://fhir.de/CodeSystem/bfarm/ops
+Alias: $FHIR = https://mopat.uni-muenster.de/FHIR/
