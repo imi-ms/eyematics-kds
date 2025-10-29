@@ -745,18 +745,10 @@ Usage: #example
 * item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
 * item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
 * item[=].answerOption[=].valueString.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueString.extension.extension[=].valueString = "meistens"
-* item[=].answerOption[=].valueString = "meistens"
-* item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
-* item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
-* item[=].answerOption[=].valueString.extension.extension[+].url = "content"
 * item[=].answerOption[=].valueString.extension.extension[=].valueString = "manchmal"
 * item[=].answerOption[=].valueString = "manchmal"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
-* item[=].answerOption[=].extension.valueDecimal = 4
+* item[=].answerOption[=].extension.valueDecimal = 3
 * item[=].answerOption[+].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
 * item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
@@ -764,7 +756,7 @@ Usage: #example
 * item[=].answerOption[=].valueString.extension.extension[=].valueString = "selten"
 * item[=].answerOption[=].valueString = "selten"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
-* item[=].answerOption[=].extension.valueDecimal = 5
+* item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].answerOption[+].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
 * item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
@@ -772,19 +764,17 @@ Usage: #example
 * item[=].answerOption[=].valueString.extension.extension[=].valueString = "nie"
 * item[=].answerOption[=].valueString = "nie"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
-* item[=].answerOption[=].extension.valueDecimal = 6
+* item[=].answerOption[=].extension.valueDecimal = 5
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].text.extension.extension[0].url = "lang"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Die folgenden Fragen beziehen sich auf alltägliche Aktivitäten, bei denen Ihre Sehkraft eine Rolle spielen könnte, wie z.B. bei der Arbeit, in der Kinderbetreuung, beim Fahren oder bei anderen Aktivitäten. Bitte geben Sie bei jeder Frage an, ob dies für Sie immer, meistens, manchmal, selten oder nie zutrifft.
-
 Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].linkId = "13"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Die folgenden Fragen beziehen sich auf alltägliche Aktivitäten, bei denen Ihre Sehkraft eine Rolle spielen könnte, wie z.B. bei der Arbeit, in der Kinderbetreuung, beim Fahren oder bei anderen Aktivitäten. Bitte geben Sie bei jeder Frage an, ob dies für Sie immer, meistens, manchmal, selten oder nie zutrifft.
-
 Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
@@ -809,18 +799,10 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
 * item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
 * item[=].answerOption[=].valueString.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueString.extension.extension[=].valueString = "meistens"
-* item[=].answerOption[=].valueString = "meistens"
-* item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
-* item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
-* item[=].answerOption[=].valueString.extension.extension[+].url = "content"
 * item[=].answerOption[=].valueString.extension.extension[=].valueString = "manchmal"
 * item[=].answerOption[=].valueString = "manchmal"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
-* item[=].answerOption[=].extension.valueDecimal = 4
+* item[=].answerOption[=].extension.valueDecimal = 3
 * item[=].answerOption[+].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
 * item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
@@ -828,7 +810,7 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].answerOption[=].valueString.extension.extension[=].valueString = "selten"
 * item[=].answerOption[=].valueString = "selten"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
-* item[=].answerOption[=].extension.valueDecimal = 5
+* item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].answerOption[+].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
 * item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
@@ -836,7 +818,7 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].answerOption[=].valueString.extension.extension[=].valueString = "nie"
 * item[=].answerOption[=].valueString = "nie"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
-* item[=].answerOption[=].extension.valueDecimal = 6
+* item[=].answerOption[=].extension.valueDecimal = 5
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].text.extension.extension[0].url = "lang"
 * item[=].text.extension.extension[=].valueCode = #de-DE
@@ -1210,13 +1192,11 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Die nächsten Fragen behandeln Ihr Umgehen mit Ihrem Sehvermögen. Bitte markieren Sie für jede Aussage, ob sie für Sie absolut richtig ist, meistens richtig ist, ob sie nicht sicher sind, ob sie meistens falsch ist oder absolut falsch ist.
-
 Wegen meiner Sehkraft bleibe ich die meiste Zeit zu Hause."
 * item[=].linkId = "22"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Die nächsten Fragen behandeln Ihr Umgehen mit Ihrem Sehvermögen. Bitte markieren Sie für jede Aussage, ob sie für Sie absolut richtig ist, meistens richtig ist, ob sie nicht sicher sind, ob sie meistens falsch ist oder absolut falsch ist.
-
 Wegen meiner Sehkraft bleibe ich die meiste Zeit zu Hause."
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1

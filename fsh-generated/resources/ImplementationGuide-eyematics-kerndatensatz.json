@@ -35,11 +35,65 @@
   "fhirVersion": [
     "4.0.1"
   ],
+  "dependsOn": [
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
+      "version": "2025.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
+      "id": "de_medizininformatikinitiative_kerndatensatz_medikation"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.prozedur",
+      "version": "2025.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ImplementationGuide/mii-ig-prozedur",
+      "id": "de_medizininformatikinitiative_kerndatensatz_prozedur"
+    }
+  ],
   "definition": {
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/mii-eyematics-iop"
+          "reference": "StructureDefinition/Angiography"
+        },
+        "name": "Angiography",
+        "description": "Profile for recording ophthalmologic angiographic observations including reference to imaging studies and the device used.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AnteriorChamberCells"
+        },
+        "name": "Anterior Chamber Cells",
+        "description": "A profile to capture anterior chamber cells observations in ophthalmology.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AnteriorChamberFlare"
+        },
+        "name": "Anterior Chamber Flare",
+        "description": "A profile to capture anterior chamber flare observations in ophthalmology.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/eye-laterality"
+        },
+        "name": "Eye Laterality",
+        "description": "Describes which eye of the patient was analyzed.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/imaging-methods"
+        },
+        "name": "Imaging Methods",
+        "description": "ValueSet containing standardized imaging procedures used in ophthalmology.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IOP"
         },
         "name": "Intraocular Pressure",
         "description": "A measurement of a patient's intraocular pressure (in mmHg).",
@@ -47,10 +101,370 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/iop-method"
+          "reference": "ValueSet/iop-code"
         },
-        "name": "IOP-Methods",
-        "description": "Describes the various methods of capturing IOP (Intraocular Pressure)",
+        "name": "IOP Code",
+        "description": "Codes used to specify the laterality of the eye.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/iop-methods"
+        },
+        "name": "IOP Methods",
+        "description": "Describes the various methods of capturing IOP (Intraocular Pressure).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/iop-methods"
+        },
+        "name": "IOP Methods Code System",
+        "description": "IOP additional method types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/IVIMedicationForm"
+        },
+        "name": "IVI Medication Form",
+        "description": "ValueSet of the IVI Medication Form",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/Questionnaire"
+        },
+        "name": "IVI Questionnaire",
+        "description": "IVI Questionnaire: first Version",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/IVITeatmentRegimen"
+        },
+        "name": "IVI Treatment Regimen",
+        "description": "ValueSet of the IVI Treatment Regimen/Protocol",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ivi-treatment-regimen"
+        },
+        "name": "IVI Treatment Regimen",
+        "description": "IVI Treatment Regimen or Protocol",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/extension-ivi-treatment-regimen"
+        },
+        "name": "IVI Treatment Regimen Extension",
+        "description": "TODO",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-eyematics-ivom-hand-movement-perception"
+        },
+        "name": "IVI-HandMovementPerception",
+        "description": "After IVI, it is checked if the patient can see his hand movements, otherwise Paracentesis might be necessary",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-eyematics-ivom-medicationadministration"
+        },
+        "name": "IVI-MedicationAdministration",
+        "description": "A MedicationAdministration resource describes that a drug (in our case in form of an IVI) has actually been administred.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-eyematics-ivom-medication"
+        },
+        "name": "IVI-Medikament",
+        "description": "Die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Mindestens ein Wirkstoff MUSS angegeben werden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-eyematics-ivi-medicationrequest"
+        },
+        "name": "IVI-Medikationsverordnung",
+        "description": "Ein MedicationRequest beschreibt die Anordnung und die Anweisungen zur Verabreichung des Medikaments an einen Patienten, in diesem Fall die Gabe eines Medikaments mit einer IVOM-Spritze. Dieses Profil basiert auf dem MII-Medikations-Kerndatensatzprofil.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-eyematics-ivom-paracentesis"
+        },
+        "name": "IVI-Paracentesis",
+        "description": "A Paracentesis procedure if it was necessary after IVI administration.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ivom-medication"
+        },
+        "name": "IVOM Medication",
+        "description": "ValueSet representing various optotypes used in visual acuity testing.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/LensDuringVATestSpecification"
+        },
+        "name": "LensDuringVATestSpecification",
+        "description": "Specification any Lens that was n front of an eye during a Visual Acuity test test",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MacularEdema"
+        },
+        "name": "Macular Edema",
+        "description": "An observation determining the presence or absence of macular edema in the retina.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-macular-oct-thickness-map"
+        },
+        "name": "Macular OCT Thickness Map",
+        "description": "ValueSet representing the various subfield thickness measurements of the macula obtained through OCT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-macular-edema-method"
+        },
+        "name": "Method of finding a macular edema",
+        "description": "ValueSet representing the methods for discovering a macular edema.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/OphthalmicDiagnosticReport"
+        },
+        "name": "Ophthalmic Diagnostic Report",
+        "description": "A general diagnostic report for ophthalmological findings.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/OphthalmicObservation"
+        },
+        "name": "Ophthalmic Observation Base Profile",
+        "description": "This is a profile as a common ground for all the other profiles, so it should not be used directly.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/OpticDiscDiameter"
+        },
+        "name": "Optic Disc Diameter",
+        "description": "Optic disc diameter measured via OCT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/PapillEdema"
+        },
+        "name": "Papill Edema",
+        "description": "An observation determining the presence or absence of papilledema (swelling of the optic disc).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Performed-NotPerformed"
+        },
+        "name": "Performed NotPerformed",
+        "description": "ValueSet representing the status of a procedure or action, indicating whether it has been performed or not.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Present-Absent"
+        },
+        "name": "Present Absent",
+        "description": "ValueSet containing codes that indicate the presence, absence, or unknown status of a clinical finding or condition.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-rnfl-oct-thickness-map"
+        },
+        "name": "Retinal nerve fiber layer OCT Thickness Map",
+        "description": "ValueSet representing the various thickness measurements of the retinal nerve fiber layer (RNFL) obtained through OCT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RetinalThickness"
+        },
+        "name": "Retinal Thickness",
+        "description": "Retinal thickness measured via OCT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RetinalVasculitis"
+        },
+        "name": "Retinal Vasculitis",
+        "description": "An observation determining the presence or absence of retinal vasculitis.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RNFLThickness"
+        },
+        "name": "RNFL Thickness",
+        "description": "Retinal nerve fiber layer thickness measured via OCT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/SUNCells"
+        },
+        "name": "SUN Cells",
+        "description": "ValueSet of the allowed values for the Standardization of uveitis nomenclature (SUN) for Anterior Chamber Cells.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/SUNFlare"
+        },
+        "name": "SUN Flare",
+        "description": "ValueSet of the allowed values for the Standardization of uveitis nomenclature (SUN) for Anterior Chamber Flare.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/sun-grades"
+        },
+        "name": "SUN Grades",
+        "description": "Grades of the Standardization of uveitis nomenclature",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IrisSynechiae"
+        },
+        "name": "Synechiae of Iris",
+        "description": "An observation determining the presence or absence of iris synechiae (adhesions involving the iris).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Used-NotUsed"
+        },
+        "name": "Used NotUsed",
+        "description": "ValueSet representing the status of a device, indicating whether it has been used or not.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/lens-types"
+        },
+        "name": "VA Lens Types",
+        "description": "This ValueSet includes codes representing different types of lenses used in ophthalmology. It covers contact lenses, eyeglasses and trial lenses.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/va-methods"
+        },
+        "name": "VA Methods",
+        "description": "Describes the various charts that can be used to assess visual acuity where concept descends from 400912000 (Visual acuity test equipment (physical object)).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/observation-visual-acuity"
+        },
+        "name": "Visual Acuity (VA)",
+        "description": "An assessment of a patients ability to see.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/va-categorial-values"
+        },
+        "name": "Visual Acuity Categorial Values",
+        "description": "ValueSet representing categorical values for visual acuity assessments.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/va-code"
+        },
+        "name": "Visual Acuity Code",
+        "description": "SNOMED or LOINC code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/va-correction-method"
+        },
+        "name": "Visual Acuity Correction Methods",
+        "description": "Methods of correction used during a visual acuity test.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/vs-va-correction-methods"
+        },
+        "name": "Visual Acuity Correction Methods",
+        "description": "Correction Methods not covered by snomed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/va-optotypes"
+        },
+        "name": "Visual Acuity Optotypes",
+        "description": "ValueSet representing various optotypes used in visual acuity testing.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/va-optotypes"
+        },
+        "name": "Visual Acuity Optotypes",
+        "description": "A CodeSystem that includes codes representing optotype used during visual acuity testing, that are not covered by loinc or snomed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/va-special-testing-parameters"
+        },
+        "name": "Visual Acuity Special Testing Parameters",
+        "description": "ValueSet representing special parameters used in visual acuity testing that go beyond standard acuity measures.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/va-test-distance"
+        },
+        "name": "Visual Acuity Test Distance",
+        "description": "ValueSet representing different test distances.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/va-quantity-units"
+        },
+        "name": "Visual Acuity Units",
+        "description": "ValueSet representing the units of measurement used in visual acuity assessments.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/vs-units"
+        },
+        "name": "Visual Acuity Units",
+        "description": "Units for quantitive measurement",
         "exampleBoolean": false
       }
     ],
@@ -62,6 +476,11 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "medication.html",
+          "title": "Medication",
           "generation": "markdown"
         }
       ]
