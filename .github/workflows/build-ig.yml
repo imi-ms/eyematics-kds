@@ -61,7 +61,7 @@ jobs:
         shell: bash
       - run: sudo apt update && sudo apt install graphviz
         shell: bash
-      - run: wget -q https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar
+      - run: wget -q https://github.com/plantuml/plantuml/releases/download/v1.2025.3/plantuml.jar
         shell: bash
       - run: java -jar plantuml.jar -tsvg -o ../images input/images-source
         shell: bash
