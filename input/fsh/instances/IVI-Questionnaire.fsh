@@ -879,6 +879,42 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
 * item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
 * item[=].answerOption[=].valueString.extension.extension[+].url = "content"
+* item[=].answerOption[=].valueString.extension.extension[=].valueString = "habe das Autofahren aufgegeben wegen der Sehkraft"
+* item[=].answerOption[=].valueString = "habe das Autofahren aufgegeben wegen der Sehkraft"
+* item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
+* item[=].answerOption[=].extension.valueDecimal = 1
+* item[=].answerOption[+].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
+* item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueString.extension.extension[+].url = "content"
+* item[=].answerOption[=].valueString.extension.extension[=].valueString = "habe das Autofahren aufgegeben wegen anderer Gründe"
+* item[=].answerOption[=].valueString = "habe das Autofahren aufgegeben wegen anderer Gründe"
+* item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
+* item[=].answerOption[=].extension.valueDecimal = 2
+* item[=].answerOption[+].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
+* item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueString.extension.extension[+].url = "content"
+* item[=].answerOption[=].valueString.extension.extension[=].valueString = "bin nie Auto gefahren"
+* item[=].answerOption[=].valueString = "bin nie Auto gefahren"
+* item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
+* item[=].answerOption[=].extension.valueDecimal = 3
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de-DE
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "Wenn NEIN. Sind Sie bisher nie Auto gefahren oder haben Sie das Auto fahren aufgegeben?"
+* item[=].linkId = "16"
+* item[=].repeats = false
+* item[=].required = true
+* item[=].text = "Wenn NEIN. Sind Sie bisher nie Auto gefahren oder haben Sie das Auto fahren aufgegeben?"
+* item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
+* item[=].extension.valueInteger = 1
+* item[=].type = #choice
+* item[+].answerOption[0].valueString.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].answerOption[=].valueString.extension.extension[0].url = "lang"
+* item[=].answerOption[=].valueString.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueString.extension.extension[+].url = "content"
 * item[=].answerOption[=].valueString.extension.extension[=].valueString = "keine Schwierigkeiten"
 * item[=].answerOption[=].valueString = "keine Schwierigkeiten"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
@@ -927,13 +963,11 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].text.extension.extension[0].url = "lang"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
-* item[=].text.extension.extension[=].valueString = "Falls ja:
-Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
-* item[=].linkId = "16"
+* item[=].text.extension.extension[=].valueString = "Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
+* item[=].linkId = "17"
 * item[=].repeats = false
 * item[=].required = true
-* item[=].text = "Falls ja:
-Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
+* item[=].text = "Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
@@ -974,7 +1008,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Fahren Sie derzeit gelegentlich Fahrrad?"
-* item[=].linkId = "17"
+* item[=].linkId = "18"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Fahren Sie derzeit gelegentlich Fahrrad?"
@@ -1026,7 +1060,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Wie oft sehen Sie nachts in der Nähe von hellen Lichtern Strahlen oder Lichthöfe, die Sie stören oder die das Sehen erschweren?"
-* item[=].linkId = "18"
+* item[=].linkId = "19"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Wie oft sehen Sie nachts in der Nähe von hellen Lichtern Strahlen oder Lichthöfe, die Sie stören oder die das Sehen erschweren?"
@@ -1078,7 +1112,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Hatten Sie in den letzten 4 Wochen Schwierigkeiten mit Blendung?"
-* item[=].linkId = "19"
+* item[=].linkId = "20"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Hatten Sie in den letzten 4 Wochen Schwierigkeiten mit Blendung?"
@@ -1122,7 +1156,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Die Wartezeiten in der Praxis sind akzeptabel und beeinträchtigen mich und meine Angehörigen nicht negativ"
-* item[=].linkId = "20"
+* item[=].linkId = "21"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Die Wartezeiten in der Praxis sind akzeptabel und beeinträchtigen mich und meine Angehörigen nicht negativ"
@@ -1166,7 +1200,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Meine augenärztliche Termine bringen für mich bzw. mein Umfeld spürbare Kosten mit sich, etwa durch Fahrten oder entgangene Arbeitszeit."
-* item[=].linkId = "21"
+* item[=].linkId = "22"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Meine augenärztliche Termine bringen für mich bzw. mein Umfeld spürbare Kosten mit sich, etwa durch Fahrten oder entgangene Arbeitszeit."
@@ -1210,7 +1244,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Arzttermine, bei denen eine Begleitperson erforderlich ist, lassen sich für mich nur schwer wahrnehmen."
-* item[=].linkId = "22"
+* item[=].linkId = "23"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Arzttermine, bei denen eine Begleitperson erforderlich ist, lassen sich für mich nur schwer wahrnehmen."
@@ -1254,7 +1288,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Ich habe die Befürchtung, meinen Angehörigen eine Belastung zu sein und Unterstützung zu benötigen."
-* item[=].linkId = "23"
+* item[=].linkId = "24"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Ich habe die Befürchtung, meinen Angehörigen eine Belastung zu sein und Unterstützung zu benötigen."
@@ -1298,7 +1332,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Ich erhalte verständliche Informationen zu meiner Augenerkrankung und deren Behandlung."
-* item[=].linkId = "24"
+* item[=].linkId = "25"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Ich erhalte verständliche Informationen zu meiner Augenerkrankung und deren Behandlung."
@@ -1342,7 +1376,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Ich werde in Entscheidungen zur Behandlung meiner Augenerkrankung mit einbezogen."
-* item[=].linkId = "25"
+* item[=].linkId = "26"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Ich werde in Entscheidungen zur Behandlung meiner Augenerkrankung mit einbezogen."
@@ -1386,7 +1420,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Mit meiner derzeitigen augenärztlichen Betreuung bin ich zufrieden."
-* item[=].linkId = "26"
+* item[=].linkId = "27"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Mit meiner derzeitigen augenärztlichen Betreuung bin ich zufrieden."
@@ -1430,7 +1464,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Ich habe Vertrauen in die medizinische Betreuung durch meinen/meine Augenarzt/Augenärzte."
-* item[=].linkId = "27"
+* item[=].linkId = "28"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Ich habe Vertrauen in die medizinische Betreuung durch meinen/meine Augenarzt/Augenärzte."
@@ -1474,7 +1508,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Ich werde während meiner Behandlung stets über die nächsten Schritte informiert."
-* item[=].linkId = "28"
+* item[=].linkId = "29"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Ich werde während meiner Behandlung stets über die nächsten Schritte informiert."
@@ -1518,7 +1552,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Ich erhalte ausreichend Gelegenheit, um Fragen zur Behandlung während meiner Arzttermine zu stellen."
-* item[=].linkId = "29"
+* item[=].linkId = "30"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Ich erhalte ausreichend Gelegenheit, um Fragen zur Behandlung während meiner Arzttermine zu stellen."
@@ -1562,7 +1596,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Ich werde rechtzeitig über Änderungen oder Anpassungen meiner Behandlung informiert (z.B. neue Termine, Therapieanpassungen)."
-* item[=].linkId = "30"
+* item[=].linkId = "31"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Ich werde rechtzeitig über Änderungen oder Anpassungen meiner Behandlung informiert (z.B. neue Termine, Therapieanpassungen)."
@@ -1606,7 +1640,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Ich weiß, wo ich verständliche und hilfreiche Informationen über meine Augenerkrankung erhalten kann."
-* item[=].linkId = "31"
+* item[=].linkId = "32"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Ich weiß, wo ich verständliche und hilfreiche Informationen über meine Augenerkrankung erhalten kann."
@@ -1650,7 +1684,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Ich habe Zugang zu Selbsthilfegruppen oder ähnlichen Angeboten, um mich mit anderen Betroffenen über meine Augenerkrankung auszutauschen."
-* item[=].linkId = "32"
+* item[=].linkId = "33"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Ich habe Zugang zu Selbsthilfegruppen oder ähnlichen Angeboten, um mich mit anderen Betroffenen über meine Augenerkrankung auszutauschen."
@@ -1694,7 +1728,7 @@ Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
 * item[=].text.extension.extension[=].valueString = "Ich habe Angst vor Schmerzen während der Spritzenbehandlung"
-* item[=].linkId = "33"
+* item[=].linkId = "34"
 * item[=].repeats = false
 * item[=].required = true
 * item[=].text = "Ich habe Angst vor Schmerzen während der Spritzenbehandlung"
