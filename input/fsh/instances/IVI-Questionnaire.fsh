@@ -887,11 +887,11 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].text.extension.extension[0].url = "lang"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
-* item[=].text.extension.extension[=].valueString = "Wenn nein: Sind Sie bisher nie Auto gefahren oder haben Sie das Auto fahren aufgegeben? "
+* item[=].text.extension.extension[=].valueString = "Wenn nein: Sind Sie bisher nie Auto gefahren oder haben Sie das Auto fahren aufgegeben?"
 * item[=].linkId = "16"
 * item[=].repeats = false
 * item[=].required = true
-* item[=].text = "Fahren Sie zur Zeit, oder wenigstens manchmal, Auto?"
+* item[=].text = "Wenn nein: Sind Sie bisher nie Auto gefahren oder haben Sie das Auto fahren aufgegeben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
@@ -947,11 +947,11 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].text.extension.extension[0].url = "lang"
 * item[=].text.extension.extension[=].valueCode = #de-DE
 * item[=].text.extension.extension[+].url = "content"
-* item[=].text.extension.extension[=].valueString = "Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
+* item[=].text.extension.extension[=].valueString = "Wenn ja: Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].linkId = "17"
 * item[=].repeats = false
 * item[=].required = true
-* item[=].text = "Wenn ja: Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren? "
+* item[=].text = "Wenn ja: Haben Sie aufgrund Ihrer Sehkraft Schwierigkeiten, nachts Auto zu fahren?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
