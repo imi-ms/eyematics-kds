@@ -65,12 +65,16 @@ jobs:
         shell: bash
       - run: java -jar plantuml.jar -tsvg -o ../images input/images-source
         shell: bash
-      - run: cat ./_updatePublisher.sh
+      - name: Download IG Publisher 3.0.3
         shell: bash
-      - run: ./_updatePublisher.sh -y && chmod a+x _genonce.sh
+        run: |
+          mkdir -p input-cache
+          curl --fail --location --retry 3 \
+            https://github.com/HL7/fhir-ig-publisher/releases/download/3.0.3/publisher.jar \
+            --output input-cache/publisher.jar
+      - name: Build IG
         shell: bash
-      - run: ./_genonce.sh
-        shell: bash
+        run: java -Dfile.encoding=UTF-8 -jar input-cache/publisher.jar -ig .
       - name: Archive generated pages
         id: deployment
         uses: actions/upload-pages-artifact@v3
