@@ -1,56 +1,56 @@
 Instance: Questionnaire
 InstanceOf: Questionnaire
 Usage: #example
-* language = #de_DE
+* language = #de-DE
 * title = "IVI Questionnaire"
 * date = "2026-05-12T09:34:43+02:00"
 * name = "IVI-Questionnaire"
-* item[0].answerOption[0].valueCoding = http://loinc.org#LA9206-9 "Excellent"
+* item[0].answerOption[0].valueCoding = http://loinc.org#LA9206-9 "ausgezeichnet"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ausgezeichnet"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Excellent"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA8967-7 "Good"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA8967-7 "gut"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "gut"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Good"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA8968-5 "Fair"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA8968-5 "mittelmäßig"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "mittelmäßig"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Fair"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA8969-3 "Poor"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA8969-3 "schlecht"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "schlecht"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Poor"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA9615-1 "Very poor"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA9615-1 "sehr schlecht"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "sehr schlecht"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Very poor"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14727-4 "Completely blind"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14727-4 "vollständig blind"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "vollständig blind"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Completely blind"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -65,52 +65,52 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -125,52 +125,52 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -185,52 +185,52 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -245,52 +245,52 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -305,52 +305,52 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -365,52 +365,52 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -425,52 +425,52 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -485,52 +485,52 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -545,52 +545,52 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -605,52 +605,52 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -665,52 +665,52 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -725,44 +725,44 @@ Usage: #example
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA9933-8 "Always"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA9933-8 "immer"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "immer"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Always"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14747-2 "Usually"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14747-2 "meistens"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "meistens"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Usually"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA10082-8 "Sometimes"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA10082-8 "manchmal"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "manchmal"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Sometimes"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA10066-1 "Rarely"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA10066-1 "selten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "selten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Rarely"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA6270-8 "Never"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA6270-8 "nie"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "nie"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Never"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -779,44 +779,44 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA9933-8 "Always"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA9933-8 "immer"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "immer"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Always"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14747-2 "Usually"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14747-2 "meistens"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "meistens"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Usually"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA10082-8 "Sometimes"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA10082-8 "manchmal"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "manchmal"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Sometimes"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA10066-1 "Rarely"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA10066-1 "selten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "selten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Rarely"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA6270-8 "Never"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA6270-8 "nie"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "nie"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Never"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -831,20 +831,20 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA33-6 "Yes"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA33-6 "ja"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ja"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Yes"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA32-8 "No"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA32-8 "bin nie Auto gefahren"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "bin nie Auto gefahren"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -859,28 +859,28 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA14735-7 "ja"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ja"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14738-1 "Mainly other reasons"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14738-1 "bin nie Auto gefahren"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "bin nie Auto gefahren"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Mainly other reasons"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15728-1 "Never drove"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15728-1 "bin nie Auto gefahren"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "bin nie Auto gefahren"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Never drove"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -895,52 +895,52 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "No difficulty at all"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA13948-7 "keine Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "keine Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No difficulty at all"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "A little difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15725-7 "wenig Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wenig Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "Moderate difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15726-5 "ziemliche Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ziemliche Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Moderate difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "Extreme difficulty"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15727-3 "starke Schwierigkeiten"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "starke Schwierigkeiten"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Extreme difficulty"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "wegen der Sehkraft aufgehört"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "wegen der Sehkraft aufgehört"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "aus anderen Gründen aufgehört oder kein Interesse"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "aus anderen Gründen aufgehört oder kein Interesse"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 6
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -955,36 +955,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA33-6 "Yes"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA33-6 "ja"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ja"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Yes"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "Stopped doing this because of your eyesight"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14735-7 "habe das Fahrradfahren aufgegeben wegen der Sehkraft"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "habe das Fahrradfahren aufgegeben wegen der Sehkraft"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this because of your eyesight"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "Stopped doing this for other reasons or not interested in doing this"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14736-5 "habe das Fahrradfahren aufgegeben wegen anderer Gründe"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "habe das Fahrradfahren aufgegeben wegen anderer Gründe"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Stopped doing this for other reasons or not interested in doing this"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA6270-8 "Never"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA6270-8 "bin nie Fahrrad gefahren"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "bin nie Fahrrad gefahren"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Never"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -999,44 +999,44 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA6154-4 "All of the time"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA6154-4 "die ganze Zeit"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "die ganze Zeit"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "All of the time"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14734-0 "Most of the time"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14734-0 "die meiste Zeit"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "die meiste Zeit"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Most of the time"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14733-2 "Some of the time"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14733-2 "einige Zeit"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "einige Zeit"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Some of the time"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA14732-4 "A little of the time"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA14732-4 "ein wenig Zeit"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ein wenig Zeit"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little of the time"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA6297-1 "None of the time"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA6297-1 "nicht"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "nicht"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "None of the time"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1051,44 +1051,44 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA32-8 "No"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA32-8 "nein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "nein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "No"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA24969-0 "Not at all bothersome"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA24969-0 "ja, überhaupt nicht lästig"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ja, überhaupt nicht lästig"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Not at all bothersome"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA31189-6 "A little bothersome"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA31189-6 "ja, ein wenig lästig"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ja, ein wenig lästig"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "A little bothersome"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA31188-8 "Somewhat bothersome"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA31188-8 "ja, etwas lästig"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ja, etwas lästig"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Somewhat bothersome"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA31187-0 "Very bothersome"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA31187-0 "ja, sehr lästig"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "ja, sehr lästig"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Very bothersome"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 5
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1103,36 +1103,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1147,36 +1147,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1191,36 +1191,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1235,36 +1235,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1279,36 +1279,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1323,36 +1323,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1367,36 +1367,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1411,36 +1411,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1455,36 +1455,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1499,36 +1499,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1543,36 +1543,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1587,36 +1587,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1631,36 +1631,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -1675,36 +1675,36 @@ Bringen Sie weniger zustande, als Sie sich vorgenommen haben?"
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs"
 * item[=].extension.valueInteger = 1
 * item[=].type = #choice
-* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "Strongly agree"
+* item[+].answerOption[0].valueCoding = http://loinc.org#LA15237-3 "stimme vollkommen überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme vollkommen überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 1
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "Agree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15774-5 "stimme generell überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Agree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 2
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "Disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15773-7 "stimme generell nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme generell nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 3
-* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "Strongly disagree"
+* item[=].answerOption[+].valueCoding = http://loinc.org#LA15236-5 "stimme überhaupt nicht überein"
 * item[=].answerOption[=].valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].answerOption[=].valueCoding.display.extension.extension[0].url = "lang"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #de-DE
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueCode = #en
 * item[=].answerOption[=].valueCoding.display.extension.extension[+].url = "content"
-* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "stimme überhaupt nicht überein"
+* item[=].answerOption[=].valueCoding.display.extension.extension[=].valueString = "Strongly disagree"
 * item[=].answerOption[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-ordinalValue"
 * item[=].answerOption[=].extension.valueDecimal = 4
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
